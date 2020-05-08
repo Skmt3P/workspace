@@ -31,6 +31,10 @@ jobs:
         uses: actions/download-artifact@master
         with:
           name: dist
+      - name: Check　Dir(1)
+        run: cd /home/runner/work/gd-p5-vue3/ && ls -a
+      - name: Check　Dir(2)
+        run: cd /home/runner/work/gd-p5-vue3/gd-p5-vue3 && ls -a
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
