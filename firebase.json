@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist",
+    "public": "/home/runner/work/gd-p5-vue3/gd-p5-vue3/dist",
     "ignore": ["**/node_modules/**"]
   }
 }

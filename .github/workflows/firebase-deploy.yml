@@ -34,8 +34,6 @@ jobs:
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
-          args: deploy
-          name: dist
-          path: /home/runner/work/gd-p5-vue3/gd-p5-vue3/dist
+          args: deploy --only hosting
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
