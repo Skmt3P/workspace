@@ -1,6 +1,12 @@
 {
   "hosting": {
-    "public": "/home/runner/work/gd-p5-vue3/gd-p5-vue3/dist",
-    "ignore": ["**/node_modules/**"]
+    "public": "dist/",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
   }
 }
