@@ -12,6 +12,7 @@
     "@vue/composition-api": "^0.5.0",
     "aframe": "^1.0.4",
     "core-js": "^3.6.4",
+    "mobile-device-detect": "^0.3.3",
     "p5": "^1.0.0",
     "vue": "^2.6.11",
     "vue-router": "^3.1.6"
