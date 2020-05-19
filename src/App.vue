@@ -3,3 +3,6 @@
     <router-view />
   </div>
 </template>
+<script>
+import 'ress'
+</script>
