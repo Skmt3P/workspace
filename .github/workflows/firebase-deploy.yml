@@ -14,7 +14,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Build
-        run: npm run build
+        run: npm run build:prod
       - name: Check　Dir(1)
         run: cd /home/runner/work/gd-p5-vue3/ && ls -a
       - name: Check　Dir(2)

@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "dev": "yarn build && yarn serve",
+    "dev": "yarn build:dev && yarn serve",
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build:dev": "vue-cli-service build --mode development",
+    "build:prod": "vue-cli-service build --mode production",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -17,6 +18,8 @@
     "p5": "^1.0.0",
     "ress": "^2.0.4",
     "vue": "^2.6.11",
+    "vue-device-detector": "^1.1.3",
+    "vue-head": "^2.2.0",
     "vue-router": "^3.1.6"
   },
   "devDependencies": {
