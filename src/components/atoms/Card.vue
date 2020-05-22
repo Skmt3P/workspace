@@ -43,7 +43,7 @@ export default defineComponent({
 })
 </script>
 <style lang="scss" scoped>
-@import '@/assets/scss/variables.scss';
+@import '@/assets/scss/_variables.scss';
 .Card {
   width: 100%;
   height: 100%;
