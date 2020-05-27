@@ -1,9 +1,9 @@
 <template>
-  <!-- grid layout採用。SPは横2列。PCは縦4列 -->
-  <ul class="CardList">
+  <!-- grid layout採用。SPは横2列。PCは縦3列 -->
+  <ul :class="[$device.mobile ? 'CardList' : 'CardListPc']">
     <template v-if="cards.length > 0">
       <template v-for="card in cards">
-        <li class="CardItem" :key="card.cardId">
+        <li class="CardListItem" :key="card.cardId">
           <Card
             :cardId="card.cardId"
             :cardType="card.cardType"
@@ -14,8 +14,9 @@
       </template>
     </template>
     <template v-else>
-      <Stripe />
-      <span class="CardItem_NullText">表示するコンテンツが存在しません</span>
+      <span class="CardListItem_NullText"
+        >表示するコンテンツが存在しません</span
+      >
     </template>
   </ul>
 </template>
@@ -43,8 +44,38 @@ export default defineComponent({
 </script>
 <style lang="scss" scoped>
 .CardList {
-  height: 100%;
+  display: grid;
+  height: max-content;
   width: 100%;
-  overflow: scroll;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50vw, 50vw));
+  grid-template-rows: repeat(auto-fit, minmax(50vw, 50vw));
+  grid-auto-flow: row dense;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  &Pc {
+    display: grid;
+    height: 100%;
+    width: max-content;
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(calc((100vh - 100px) / 3), calc((100vh - 100px) / 3))
+    );
+    grid-template-rows: repeat(
+      auto-fit,
+      minmax(calc((100vh - 100px) / 3), calc((100vh - 100px) / 3))
+    );
+    grid-auto-flow: column dense;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+  &Item {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+  }
 }
 </style>

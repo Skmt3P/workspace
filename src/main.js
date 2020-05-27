@@ -2,7 +2,7 @@ import 'ress'
 import Vue from 'vue'
 import VueCompositionApi from '@vue/composition-api'
 import VueHead from 'vue-head'
-import VueDeviceDetector from 'vue-device-detector'
+import device from 'vue-device-detector'
 import router from './modules/router'
 import App from './App'
 
@@ -10,7 +10,7 @@ import App from './App'
 
 Vue.use(VueCompositionApi)
 Vue.use(VueHead)
-Vue.use(VueDeviceDetector)
+Vue.use(device)
 
 new Vue({
   el: '#app',

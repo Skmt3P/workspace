@@ -51,6 +51,33 @@ export default defineComponent({
         cardId: 'black-2',
         cardType: 'black',
       },
+      {
+        cardId: 'stripe-4',
+        cardType: 'active',
+        cardImage: 'logo.png',
+      },
+      {
+        cardId: 'gray-2',
+        cardType: 'gray',
+      },
+      {
+        cardId: 'stripe-5',
+        cardType: 'active',
+        cardImage: 'logo.png',
+      },
+      {
+        cardId: 'black-3',
+        cardType: 'black',
+      },
+      {
+        cardId: 'stripe-6',
+        cardType: 'active',
+        cardImage: 'logo.png',
+      },
+      {
+        cardId: 'gray-3',
+        cardType: 'gray',
+      },
     ])
     const showDialog = (cardId) => {
       if (!cardId) return true
