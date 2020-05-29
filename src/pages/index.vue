@@ -109,5 +109,6 @@ export default defineComponent({
   z-index: 0;
   height: 100%;
   width: 100%;
+  overflow: auto;
 }
 </style>
