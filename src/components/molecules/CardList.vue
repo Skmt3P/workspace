@@ -72,6 +72,7 @@ export default defineComponent({
     height: 100%;
     position: relative;
     box-sizing: border-box;
+    box-shadow: -2px -2px 13px rgba(0, 0, 0, 0.25);
   }
 }
 </style>

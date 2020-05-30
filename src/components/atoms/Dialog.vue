@@ -43,6 +43,7 @@ export default defineComponent({
     left: 50%;
     background-color: $--c-white-0;
     transform: translate(-50%, -50%);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
   }
 }
 </style>
