@@ -1,16 +1,16 @@
 <template>
   <button
     :class="[
-      cardType === 'black'
+      color === 'black'
         ? 'Card--black'
-        : cardType === 'gray'
+        : color === 'gray'
         ? 'Card--gray'
         : 'Card',
     ]"
-    :disabled="cardType !== 'active'"
+    :disabled="!isActive"
     @click="clickedCard"
   >
-    <template v-if="cardImage">
+    <template v-if="image">
       <img :src="imageSrc" class="CardImage" />
     </template>
   </button>
@@ -19,17 +19,22 @@
 import { defineComponent, computed } from '@vue/composition-api'
 export default defineComponent({
   props: {
-    cardId: {
+    id: {
       type: String,
       default: null,
       required: true,
     },
-    cardType: {
+    color: {
       type: String,
       default: null,
       required: false,
     },
-    cardImage: {
+    isActive: {
+      type: Boolean,
+      default: false,
+      required: false,
+    },
+    image: {
       type: String,
       default: null,
       required: false,
@@ -37,11 +42,11 @@ export default defineComponent({
   },
   setup(props, context) {
     const imageSrc = computed(() => {
-      return require(`@/assets/img/${props.cardImage}`)
+      return require(`@/assets/img/${props.image}`)
     })
     const clickedCard = () => {
-      if (props.cardId) {
-        context.emit('clicked-card', props.cardId)
+      if (props.id) {
+        context.emit('clicked-card', props.id)
       }
     }
     return { imageSrc, clickedCard }

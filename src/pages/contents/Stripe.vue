@@ -16,7 +16,6 @@ export default defineComponent({
   setup() {
     const openCheckout = async () => {
       try {
-        console.log(process.env)
         if (
           !process.env.VUE_APP_KEY_STRIPE ||
           !process.env.VUE_APP_PRICECODE_STRIPE ||
@@ -25,13 +24,12 @@ export default defineComponent({
         ) {
           throw new Error('Not found .env')
         }
-        const stripeResult = await StripeCheckout(
+        await StripeCheckout(
           process.env.VUE_APP_KEY_STRIPE,
           process.env.VUE_APP_PRICECODE_STRIPE,
           process.env.VUE_APP_SUCCESSURL_STRIPE,
           process.env.VUE_APP_CANCELURL_STRIPE
         )
-        console.log(stripeResult)
       } catch (e) {
         console.log(e)
       }

@@ -25,59 +25,35 @@ export default defineComponent({
     // 合計個数は6の倍数にする
     const cards = reactive([
       {
-        cardId: 'stripe-1',
-        cardType: 'active',
-        cardImage: 'logo.png',
+        id: 'stripe-1',
+        isActive: true,
+        image: 'logo.png',
       },
       {
-        cardId: 'black-1',
-        cardType: 'black',
+        id: 'stripe-2',
+        isActive: true,
+        image: 'logo.png',
       },
       {
-        cardId: 'stripe-2',
-        cardType: 'active',
-        cardImage: 'logo.png',
+        id: 'stripe-3',
+        isActive: true,
+        image: 'logo.png',
       },
       {
-        cardId: 'gray-1',
-        cardType: 'gray',
+        id: 'stripe-4',
+        isActive: true,
+        image: 'logo.png',
       },
       {
-        cardId: 'stripe-3',
-        cardType: 'active',
-        cardImage: 'logo.png',
+        id: 'stripe-5',
+        isActive: true,
+        image: 'logo.png',
       },
       {
-        cardId: 'black-2',
-        cardType: 'black',
-      },
-      {
-        cardId: 'stripe-4',
-        cardType: 'active',
-        cardImage: 'logo.png',
-      },
-      {
-        cardId: 'gray-2',
-        cardType: 'gray',
-      },
-      {
-        cardId: 'stripe-5',
-        cardType: 'active',
-        cardImage: 'logo.png',
-      },
-      {
-        cardId: 'black-3',
-        cardType: 'black',
-      },
-      {
-        cardId: 'stripe-6',
-        cardType: 'active',
-        cardImage: 'logo.png',
-      },
-      {
-        cardId: 'gray-3',
-        cardType: 'gray',
-      },
+        id: 'stripe-6',
+        isActive: true,
+        image: 'logo.png',
+      }
     ])
     const showDialog = (cardId) => {
       if (!cardId) return true

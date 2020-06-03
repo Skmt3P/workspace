@@ -2,12 +2,13 @@
   <!-- grid layout採用。SPは横2列。PCは縦3列 -->
   <ul :class="[$device.mobile ? 'CardList' : 'CardListPc']">
     <template v-if="cards.length > 0">
-      <template v-for="card in cards">
-        <li class="CardListItem" :key="card.cardId">
+      <template v-for="card in sortedCards">
+        <li class="CardListItem" :key="card.id">
           <Card
-            :cardId="card.cardId"
-            :cardType="card.cardType"
-            :cardImage="card.cardImage"
+            :id="card.id"
+            :color="card.color"
+            :isActive="card.isActive"
+            :image="card.image"
             @clicked-card="clickedCard"
           />
         </li>
@@ -21,7 +22,7 @@
   </ul>
 </template>
 <script>
-import { defineComponent } from '@vue/composition-api'
+import { defineComponent, computed } from '@vue/composition-api'
 import Card from '@/components/atoms/Card'
 export default defineComponent({
   props: {
@@ -35,10 +36,51 @@ export default defineComponent({
     Card,
   },
   setup(props, context) {
-    const clickedCard = (cardId) => {
-      context.emit('clicked-card', cardId)
+    // mobile版の白色cardの位置を決定
+    const defineCardColor = index => {
+      // 最初は白
+      if (index === 0) return 'white'
+      if (index % 4 === 1) return 'black'
+      // mobileの場合
+      console.log(context)
+      if (context.root.$device.mobile) {
+        if (index % 4 === 2) return 'gray'
+        return 'white'
+      }
+      if (index % 4 === 3) return 'gray'
+      return 'white'
     }
-    return { clickedCard }
+    // sortedCardsのcomputed
+    const sortedCards = computed(() => {
+      const cardsArray = []
+      // カードの枚数は6の倍数
+      const length = props.cards.length % 6 === 0 ? props.cards.length : 6 * ( Math.floor(props.cards.length / 6 ) + 1 )
+      for(let i = 0; i < length; i++) {
+        const card = props.cards[i]
+        if (card) {
+          cardsArray.push({
+            id: card.id,
+            isActive: card.isActive,
+            image: card.image,
+            color: defineCardColor(i)
+          })
+        }
+        if (!card) {
+          cardsArray.push({
+            id: i,
+            isActive: false,
+            image: null,
+            color: defineCardColor(i)
+          })
+        }
+      }
+      return cardsArray
+    })
+    // cardのemitter
+    const clickedCard = (id) => {
+      context.emit('clicked-card', id)
+    }
+    return { sortedCards, clickedCard }
   },
 })
 </script>
