@@ -9,6 +9,8 @@
   &_Header {
     width: 100%;
     height: 40px;
+    transform: skewY(-2deg);
+    transform-origin: top left;
   }
   &_Main {
     width: 100%;
@@ -17,5 +19,7 @@
   &_Footer {
     width: 100%;
     height: 25px;
+    transform: skewY(-2deg);
+    transform-origin: bottom right;
   }
 }
