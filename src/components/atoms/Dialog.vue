@@ -2,6 +2,7 @@
   <div class="Dialog">
     <button @click.prevent="clickedBackground" class="DialogBackground" />
     <div class="DialogContent">
+      <h2 class="DialogContent_Heading">{{title}}</h2>
       <slot></slot>
     </div>
   </div>
@@ -9,6 +10,13 @@
 <script>
 import { defineComponent } from '@vue/composition-api'
 export default defineComponent({
+  props: {
+    title: {
+      type: String,
+      default: null,
+      required: true,
+    }
+  },
   setup(props, context) {
     const clickedBackground = () => {
       context.emit('clicked-background')
@@ -44,6 +52,15 @@ export default defineComponent({
     background-color: $--c-white-0;
     transform: translate(-50%, -50%);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
+    &_Heading {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translate(-50%,0);
+      letter-spacing: 0.05em;
+      font-size: inherit;
+      white-space: nowrap;
+    }
   }
 }
 </style>

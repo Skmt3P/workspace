@@ -11,7 +11,7 @@
     @click="clickedCard"
   >
     <template v-if="image">
-      <img :src="imageSrc" class="CardImage" />
+      <img :src="imageSrc" class="CardImage" :alt="title" />
     </template>
   </button>
 </template>
@@ -23,6 +23,11 @@ export default defineComponent({
       type: String,
       default: null,
       required: true,
+    },
+    title: {
+      type: String,
+      default: null,
+      required: false,
     },
     color: {
       type: String,

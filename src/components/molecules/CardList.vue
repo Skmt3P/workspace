@@ -6,6 +6,7 @@
         <li class="CardListItem" :key="card.id">
           <Card
             :id="card.id"
+            :title="card.title"
             :color="card.color"
             :isActive="card.isActive"
             :image="card.image"
@@ -37,12 +38,11 @@ export default defineComponent({
   },
   setup(props, context) {
     // mobile版の白色cardの位置を決定
-    const defineCardColor = index => {
+    const defineCardColor = (index) => {
       // 最初は白
       if (index === 0) return 'white'
       if (index % 4 === 1) return 'black'
       // mobileの場合
-      console.log(context)
       if (context.root.$device.mobile) {
         if (index % 4 === 2) return 'gray'
         return 'white'
@@ -55,11 +55,12 @@ export default defineComponent({
       const cardsArray = []
       // カードの枚数は6の倍数
       const length = props.cards.length % 6 === 0 ? props.cards.length : 6 * ( Math.floor(props.cards.length / 6 ) + 1 )
-      for(let i = 0; i < length; i++) {
+      for (let i = 0; i < length; i++) {
         const card = props.cards[i]
         if (card) {
           cardsArray.push({
             id: card.id,
+            title: card.title,
             isActive: card.isActive,
             image: card.image,
             color: defineCardColor(i)
@@ -67,7 +68,8 @@ export default defineComponent({
         }
         if (!card) {
           cardsArray.push({
-            id: i,
+            id: `${i}`,
+            title: null,
             isActive: false,
             image: null,
             color: defineCardColor(i)

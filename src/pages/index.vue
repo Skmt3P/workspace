@@ -2,8 +2,8 @@
   <div class="Top">
     <CardList @clicked-card="showDialog" :cards="cards" />
     <template v-if="$route.query.id">
-      <Dialog @clicked-background="closeDialog">
-        <template v-if="$route.query.id === 'stripe'">
+      <Dialog :title="dialogTitle" @clicked-background="closeDialog">
+        <template v-if="$route.query.id">
           <Stripe />
         </template>
       </Dialog>
@@ -11,7 +11,7 @@
   </div>
 </template>
 <script>
-import { defineComponent, reactive } from '@vue/composition-api'
+import { defineComponent, reactive, computed } from '@vue/composition-api'
 import CardList from '@/components/molecules/CardList'
 import Dialog from '@/components/atoms/Dialog'
 import Stripe from '@/pages/contents/Stripe'
@@ -25,42 +25,50 @@ export default defineComponent({
     // 合計個数は6の倍数にする
     const cards = reactive([
       {
-        id: 'stripe-1',
+        id: 'stripe-coffee',
+        title: 'Payment with Stripe (Coffee)',
         isActive: true,
         image: 'logo.png',
       },
       {
-        id: 'stripe-2',
+        id: 'stripe-ramen',
+        title: 'Payment with Stripe (Ramen)',
         isActive: true,
         image: 'logo.png',
       },
       {
-        id: 'stripe-3',
+        id: 'stripe-sake',
+        title: 'Payment with Stripe (Sake)',
         isActive: true,
         image: 'logo.png',
       },
       {
-        id: 'stripe-4',
+        id: 'stripe-sukiyaki',
+        title: 'Payment with Stripe (Sukiyaki)',
         isActive: true,
         image: 'logo.png',
       },
       {
-        id: 'stripe-5',
-        isActive: true,
-        image: 'logo.png',
-      },
-      {
-        id: 'stripe-6',
+        id: 'stripe-sushi',
+        title: 'Payment with Stripe (Sushi)',
         isActive: true,
         image: 'logo.png',
       }
     ])
+    const dialogTitle = computed(() => {
+      const targetCard = context.root.$route.query.id ? cards.filter(card => {
+        return card.id === context.root.$route.query.id
+      })[0] : null
+      if(targetCard) {
+        return targetCard.title
+      }
+      return null
+    })
     const showDialog = (cardId) => {
       if (!cardId) return true
-      const id = cardId.match(/stripe/) ? 'stripe' : cardId
       context.root.$router.push({
         query: {
-          id,
+          id:cardId,
         },
       })
     }
@@ -73,6 +81,7 @@ export default defineComponent({
     }
     return {
       cards,
+      dialogTitle,
       showDialog,
       closeDialog,
     }
