@@ -1,13 +1,13 @@
 <template>
   <div class="Top">
     <CardList @clicked-card="showDialog" :cards="cards" />
-    <template v-if="$route.query.id">
-      <Dialog :title="dialogTitle" @clicked-background="closeDialog">
+    <transition name="background">
+      <Dialog v-show="visibleDialog" :title="dialogTitle" :visible-dialog="visibleDialog" @clicked-background="closeDialog">
         <template v-if="$route.query.id">
           <Stripe />
         </template>
       </Dialog>
-    </template>
+    </transition>
   </div>
 </template>
 <script>
@@ -64,6 +64,9 @@ export default defineComponent({
       }
       return null
     })
+    const visibleDialog = computed(() => {
+      return !!context.root.$route.query.id
+    })
     const showDialog = (cardId) => {
       if (!cardId) return true
       context.root.$router.push({
@@ -81,6 +84,7 @@ export default defineComponent({
     }
     return {
       cards,
+      visibleDialog,
       dialogTitle,
       showDialog,
       closeDialog,
@@ -95,5 +99,17 @@ export default defineComponent({
   height: 100%;
   width: 100%;
   overflow: auto;
+}
+// dialog background animation
+.background-enter,
+.background-leave-to {
+  opacity: 0;
+}
+.background-enter-active {
+  transition: all 0s ease;
+}
+.background-leave-active {
+  transition: all 0.2s ease;
+  transition-delay: 0.2s;
 }
 </style>

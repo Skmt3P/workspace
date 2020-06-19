@@ -1,10 +1,14 @@
 <template>
   <div class="Dialog">
     <button @click.prevent="clickedBackground" class="DialogBackground" />
-    <div class="DialogContent">
-      <h2 class="DialogContent_Heading">{{title}}</h2>
-      <slot></slot>
-    </div>
+    <transition name="content">
+      <template v-if="visibleDialog">
+        <div class="DialogContent">
+          <h2 class="DialogContent_Heading">{{title}}</h2>
+          <slot></slot>
+        </div>
+      </template>
+    </transition>
   </div>
 </template>
 <script>
@@ -13,8 +17,12 @@ export default defineComponent({
   props: {
     title: {
       type: String,
-      default: null,
-      required: true,
+      default: null
+    },
+    visibleDialog: {
+      type: Boolean,
+      default: false,
+      requreid: false
     }
   },
   setup(props, context) {
@@ -62,5 +70,19 @@ export default defineComponent({
       white-space: nowrap;
     }
   }
+}
+// dialog content animation
+.content-enter {
+  opacity: 0;
+}
+.content-leave-to {
+  opacity: 0;
+}
+.content-enter-active {
+  transition: all 0.25s ease;
+  transition-delay: 0.05s;
+}
+.content-leave-active {
+  transition: all 0.25s ease;
 }
 </style>
