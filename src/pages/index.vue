@@ -28,31 +28,31 @@ export default defineComponent({
         id: 'stripe-coffee',
         title: 'Payment with Stripe (Coffee)',
         isActive: true,
-        image: 'logo.png',
+        image: 'icon-stripe.png',
       },
       {
         id: 'stripe-ramen',
         title: 'Payment with Stripe (Ramen)',
         isActive: true,
-        image: 'logo.png',
+        image: 'icon-stripe.png',
       },
       {
         id: 'stripe-sake',
         title: 'Payment with Stripe (Sake)',
         isActive: true,
-        image: 'logo.png',
+        image: 'icon-stripe.png',
       },
       {
         id: 'stripe-sukiyaki',
         title: 'Payment with Stripe (Sukiyaki)',
         isActive: true,
-        image: 'logo.png',
+        image: 'icon-stripe.png',
       },
       {
         id: 'stripe-sushi',
         title: 'Payment with Stripe (Sushi)',
         isActive: true,
-        image: 'logo.png',
+        image: 'icon-stripe.png',
       }
     ])
     const dialogTitle = computed(() => {
