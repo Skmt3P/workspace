@@ -5,8 +5,8 @@
     >
   </div>
 </template>
-<style lang="scss" scoped>
-@import '@/assets/scss/_variables.scss';
+<style lang="postcss" scoped>
+@import '@/assets/css/_variables.css';
 .TheGlobalFooter {
   width: 100%;
   height: 100%;
@@ -17,7 +17,7 @@
     font-size: 10px;
     line-height: 1;
     letter-spacing: 0.1em;
-    color: $--c-black-0;
+    color: var(--c-black-0);
   }
 }
 </style>

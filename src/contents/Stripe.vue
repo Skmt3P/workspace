@@ -1,10 +1,11 @@
 <template>
   <div class="Stripe">
+    <h2 class="Stripe_Heading">{{title}}</h2>
     <button @click="openCheckout" class="Stripe_Button">
       <img
         class="Stripe_ButtonImage"
         alt="Vue logo"
-        src="../../assets/img/logo.png"
+        src="@/assets/img/logo.png"
       />
     </button>
   </div>
@@ -13,6 +14,12 @@
 import { defineComponent } from '@vue/composition-api'
 import StripeCheckout from '@/modules/stripe'
 export default defineComponent({
+  props: {
+    title: {
+      type: String,
+      default: null
+    },
+  },
   setup() {
     const openCheckout = async () => {
       try {
@@ -40,11 +47,17 @@ export default defineComponent({
   },
 })
 </script>
-<style lang="scss">
+<style lang="postcss">
 .Stripe {
   width: 100%;
   height: 100%;
   padding: 10px;
+  &_Heading {
+    text-align: center;
+    letter-spacing: 0.05em;
+    font-size: inherit;
+    white-space: nowrap;
+  }
   &_Button {
     width: 100%;
     height: 100%;

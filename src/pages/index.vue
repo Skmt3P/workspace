@@ -2,9 +2,9 @@
   <div class="Top">
     <CardList @clicked-card="showDialog" :cards="cards" />
     <transition name="background">
-      <Dialog v-show="visibleDialog" :title="dialogTitle" :visible-dialog="visibleDialog" @clicked-background="closeDialog">
+      <Dialog v-show="visibleDialog" :visible-dialog="visibleDialog" @clicked-background="closeDialog">
         <template v-if="$route.query.id">
-          <Stripe />
+          <Stripe :title="dialogTitle" />
         </template>
       </Dialog>
     </transition>
@@ -14,7 +14,7 @@
 import { defineComponent, reactive, computed } from '@vue/composition-api'
 import CardList from '@/components/molecules/CardList'
 import Dialog from '@/components/atoms/Dialog'
-import Stripe from '@/pages/contents/Stripe'
+import Stripe from '@/contents/Stripe'
 export default defineComponent({
   components: {
     CardList,
@@ -92,8 +92,7 @@ export default defineComponent({
   },
 })
 </script>
-<style lang="scss">
-@import '@/assets/scss/_base.scss';
+<style lang="postcss">
 .Top {
   z-index: 0;
   height: 100%;

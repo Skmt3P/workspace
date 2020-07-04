@@ -3,7 +3,7 @@
   <ul :class="[$device.mobile ? 'CardList' : 'CardListPc']">
     <template v-if="cards.length > 0">
       <template v-for="card in sortedCards">
-        <li class="CardListItem" :key="card.id">
+        <li class="CardList_Item" :key="card.id">
           <Card
             :id="card.id"
             :title="card.title"
@@ -86,7 +86,7 @@ export default defineComponent({
   },
 })
 </script>
-<style lang="scss" scoped>
+<style lang="postcss" scoped>
 .CardList {
   display: grid;
   height: 100%;
@@ -110,7 +110,7 @@ export default defineComponent({
     );
     grid-auto-flow: column dense;
   }
-  &Item {
+  &_Item {
     list-style: none;
     width: 100%;
     height: 100%;

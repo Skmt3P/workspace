@@ -11,7 +11,7 @@
     @click="clickedCard"
   >
     <template v-if="image">
-      <img :src="imageSrc" class="CardImage" :alt="title" />
+      <img :src="imageSrc" class="Card_Image" :alt="title" />
     </template>
   </button>
 </template>
@@ -58,26 +58,26 @@ export default defineComponent({
   },
 })
 </script>
-<style lang="scss" scoped>
-@import '@/assets/scss/_variables.scss';
+<style lang="postcss" scoped>
+@import '@/assets/css/_variables.css';
 .Card {
   width: 100%;
   height: 100%;
   padding: 10px;
-  background-color: $--c-white-0;
+  background-color: var(--c-white-0);
   &--black {
     width: 100%;
     height: 100%;
     padding: 10px;
-    background-color: $--c-black-0;
+    background-color: var(--c-black-0);
   }
   &--gray {
     width: 100%;
     height: 100%;
     padding: 10px;
-    background-color: $--c-gray-0;
+    background-color: var(--c-gray-0);
   }
-  &Image {
+  &_Image {
     max-width: 100%;
     max-height: 100%;
     margin: auto;

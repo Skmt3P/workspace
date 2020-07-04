@@ -1,9 +1,10 @@
 /* Default Layout Style */
-@import '@/assets/scss/_variables.scss';
+@charset "UTF-8";
+@import '@/assets/css/_variables.css';
 .TheDefaultLayout {
   height: 95vh;
   width: 100vw;
-  font-family: $--font-family;
+  font-family: var(--font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   &_Header {
