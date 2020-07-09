@@ -44,7 +44,6 @@ export default defineComponent({
         sizes: '48x48',
         type: 'image/png',
       },
-      // ...
     ],
   },
 })
