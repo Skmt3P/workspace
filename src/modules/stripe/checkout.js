@@ -1,11 +1,6 @@
 import { loadStripe } from '@stripe/stripe-js'
 
-export default async function StripeCheckout(
-  key,
-  priceCode,
-  successUrl,
-  cancelUrl
-) {
+export default async function Checkout(key, priceCode, successUrl, cancelUrl) {
   try {
     const stripe = await loadStripe(key)
     stripe

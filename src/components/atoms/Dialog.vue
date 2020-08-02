@@ -4,7 +4,7 @@
     <transition name="content">
       <template v-if="visibleDialog">
         <div class="DialogContent">
-          <h2 class="DialogContent_Heading">{{title}}</h2>
+          <h2 class="DialogContent_Heading">{{ title }}</h2>
           <slot></slot>
         </div>
       </template>
@@ -17,13 +17,13 @@ export default defineComponent({
   props: {
     title: {
       type: String,
-      default: null
+      default: null,
     },
     visibleDialog: {
       type: Boolean,
       default: false,
-      requreid: false
-    }
+      requreid: false,
+    },
   },
   setup(props, context) {
     const clickedBackground = () => {
@@ -34,7 +34,7 @@ export default defineComponent({
 })
 </script>
 <style lang="scss" scoped>
-@import '@/assets/scss/_base.scss';
+@import '@/assets/style/_base.scss';
 .Dialog {
   position: absolute;
   z-index: 1;
@@ -52,6 +52,7 @@ export default defineComponent({
   }
   &Content {
     position: absolute;
+    padding: 20px;
     z-index: 1;
     width: 90vmin;
     height: 90vmin;
@@ -61,10 +62,10 @@ export default defineComponent({
     transform: translate(-50%, -50%);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
     &_Heading {
-      position: absolute;
-      top: 10px;
-      left: 50%;
-      transform: translate(-50%,0);
+      position: relative;
+      text-align: center;
+      width: 100%;
+      height: 20px;
       letter-spacing: 0.05em;
       font-size: inherit;
       white-space: nowrap;

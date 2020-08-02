@@ -54,7 +54,10 @@ export default defineComponent({
     const sortedCards = computed(() => {
       const cardsArray = []
       // カードの枚数は6の倍数
-      const length = props.cards.length % 6 === 0 ? props.cards.length : 6 * ( Math.floor(props.cards.length / 6 ) + 1 )
+      const length =
+        props.cards.length % 6 === 0
+          ? props.cards.length
+          : 6 * (Math.floor(props.cards.length / 6) + 1)
       for (let i = 0; i < length; i++) {
         const card = props.cards[i]
         if (card) {
@@ -63,7 +66,7 @@ export default defineComponent({
             title: card.title,
             isActive: card.isActive,
             image: card.image,
-            color: defineCardColor(i)
+            color: defineCardColor(i),
           })
         }
         if (!card) {
@@ -72,7 +75,7 @@ export default defineComponent({
             title: null,
             isActive: false,
             image: null,
-            color: defineCardColor(i)
+            color: defineCardColor(i),
           })
         }
       }

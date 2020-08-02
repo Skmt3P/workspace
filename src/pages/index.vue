@@ -2,64 +2,105 @@
   <div class="Top">
     <CardList @clicked-card="showDialog" :cards="cards" />
     <transition name="background">
-      <Dialog v-show="visibleDialog" :title="dialogTitle" :visible-dialog="visibleDialog" @clicked-background="closeDialog">
-        <template v-if="$route.query.id">
-          <Stripe />
-        </template>
+      <Dialog
+        v-show="visibleDialog"
+        :title="dialogTitle"
+        :visible-dialog="visibleDialog"
+        @clicked-background="closeDialog"
+      >
+        <portal-target name="contents"></portal-target>
       </Dialog>
     </transition>
+    <portal to="contents">
+      <template v-if="$route.query.id === 'profile'">
+        <Profile />
+      </template>
+      <template v-if="$route.query.id === 'resume'">
+        <Resume />
+      </template>
+      <template v-if="$route.query.id === 'aframe'">
+        <Aframe />
+      </template>
+      <template v-if="$route.query.id === 'p5'">
+        <Pfive />
+      </template>
+      <template v-if="$route.query.id === 'ar'">
+        <Ar />
+      </template>
+      <template v-if="$route.query.id === 'stripe'">
+        <Stripe />
+      </template>
+    </portal>
   </div>
 </template>
 <script>
 import { defineComponent, reactive, computed } from '@vue/composition-api'
 import CardList from '@/components/molecules/CardList'
 import Dialog from '@/components/atoms/Dialog'
-import Stripe from '@/pages/contents/Stripe'
+import Aframe from '@/contents/aframe/index'
+import Ar from '@/contents/ar/index'
+import Pfive from '@/contents/p5/index'
+import Profile from '@/contents/profile/index'
+import Resume from '@/contents/resume/index'
+import Stripe from '@/contents/stripe/index'
 export default defineComponent({
   components: {
     CardList,
     Dialog,
+    Aframe,
+    Ar,
+    Pfive,
+    Profile,
+    Resume,
     Stripe,
   },
   setup(props, context) {
     // 合計個数は6の倍数にする
     const cards = reactive([
       {
-        id: 'stripe-coffee',
-        title: 'Payment with Stripe (Coffee)',
+        id: 'profile',
+        title: 'My Profile',
+        isActive: true,
+        image: 'skmt3p_prof.png',
+      },
+      {
+        id: 'resume',
+        title: 'My Resume',
+        isActive: true,
+        image: 'icon-resume.png',
+      },
+      {
+        id: 'aframe',
+        title: 'Aframe contents',
+        isActive: true,
+        image: 'icon-aframe.png',
+      },
+      {
+        id: 'p5',
+        title: 'P5 contents',
+        isActive: true,
+        image: 'icon-p5.png',
+      },
+      {
+        id: 'ar',
+        title: 'AR contents',
+        isActive: true,
+        image: 'icon-ar.png',
+      },
+      {
+        id: 'stripe',
+        title: 'Payment with Stripe',
         isActive: true,
         image: 'icon-stripe.png',
       },
-      {
-        id: 'stripe-ramen',
-        title: 'Payment with Stripe (Ramen)',
-        isActive: true,
-        image: 'icon-stripe.png',
-      },
-      {
-        id: 'stripe-sake',
-        title: 'Payment with Stripe (Sake)',
-        isActive: true,
-        image: 'icon-stripe.png',
-      },
-      {
-        id: 'stripe-sukiyaki',
-        title: 'Payment with Stripe (Sukiyaki)',
-        isActive: true,
-        image: 'icon-stripe.png',
-      },
-      {
-        id: 'stripe-sushi',
-        title: 'Payment with Stripe (Sushi)',
-        isActive: true,
-        image: 'icon-stripe.png',
-      }
     ])
     const dialogTitle = computed(() => {
-      const targetCard = context.root.$route.query.id ? cards.filter(card => {
-        return card.id === context.root.$route.query.id
-      })[0] : null
-      if(targetCard) {
+      const targetCard = context.root.$route.query.id
+        ? cards.filter((card) => {
+            return card.id === context.root.$route.query.id
+          })[0]
+        : null
+      if (targetCard) {
         return targetCard.title
       }
       return null
@@ -71,7 +112,7 @@ export default defineComponent({
       if (!cardId) return true
       context.root.$router.push({
         query: {
-          id:cardId,
+          id: cardId,
         },
       })
     }
@@ -93,12 +134,17 @@ export default defineComponent({
 })
 </script>
 <style lang="scss">
-@import '@/assets/scss/_base.scss';
+@import '@/assets/style/_base.scss';
 .Top {
   z-index: 0;
   height: 100%;
   width: 100%;
   overflow: auto;
+}
+// vue-portal
+.vue-portal-target {
+  width: 100%;
+  height: calc(100% - 20px);
 }
 // dialog background animation
 .background-enter,

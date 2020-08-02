@@ -1,32 +1,46 @@
 <template>
   <div class="Stripe">
     <button @click="openCheckout" class="Stripe_Button">
-      <img
-        class="Stripe_ButtonImage"
-        alt="Vue logo"
-        src="../../assets/img/logo.png"
-      />
+      <i class="Stripe_ButtonIcon">{{ icon }}</i>
+      <span class="Stripe_ButtonText">{{'Payment for ' + icon + ' (' + price + ')' }}</span>
     </button>
   </div>
 </template>
 <script>
 import { defineComponent } from '@vue/composition-api'
-import StripeCheckout from '@/modules/stripe'
+import Checkout from '@/modules/stripe/checkout'
 export default defineComponent({
-  setup() {
+  props: {
+    sku: {
+      type: String,
+      required: true,
+      default: null,
+    },
+    icon: {
+      type: String,
+      required: true,
+      default: null,
+    },
+    price: {
+      type: String,
+      required: true,
+      default: null,
+    },
+  },
+  setup(props) {
     const openCheckout = async () => {
       try {
         if (
           !process.env.VUE_APP_KEY_STRIPE ||
-          !process.env.VUE_APP_PRICECODE_STRIPE ||
+          !props.sku ||
           !process.env.VUE_APP_SUCCESSURL_STRIPE ||
           !process.env.VUE_APP_CANCELURL_STRIPE
         ) {
           throw new Error('Not found .env')
         }
-        await StripeCheckout(
+        await Checkout(
           process.env.VUE_APP_KEY_STRIPE,
-          process.env.VUE_APP_PRICECODE_STRIPE,
+          props.sku,
           process.env.VUE_APP_SUCCESSURL_STRIPE,
           process.env.VUE_APP_CANCELURL_STRIPE
         )
@@ -52,6 +66,16 @@ export default defineComponent({
       max-width: 100%;
       max-height: 100%;
     }
+  }
+  &_ButtonIcon {
+    display: block;
+    font-size: 10em;
+    margin-bottom: 8px;
+  }
+  &_ButtonText {
+    display: block;
+    text-align: center;
+    font-size: 0.8rem;
   }
 }
 </style>

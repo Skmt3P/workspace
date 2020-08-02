@@ -4,7 +4,7 @@
   </div>
 </template>
 <style lang="scss" scoped>
-@import '@/assets/scss/_variables.scss';
+@import '@/assets/style/_variables.scss';
 .TheGlobalHeader {
   width: 100%;
   height: 100%;
