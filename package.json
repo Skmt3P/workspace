@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "dev": "yarn build:dev && yarn serve",
+    "dev": "yarn build:dev && cross-env NODE_ENV=development HOST=0.0.0.0 PORT=8000 yarn serve",
+    "dev:local": "yarn build:dev && yarn serve",
     "serve": "vue-cli-service serve",
     "build:dev": "vue-cli-service build --mode development",
     "build:prod": "vue-cli-service build --mode production",

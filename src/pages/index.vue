@@ -43,6 +43,7 @@ import Pfive from '@/contents/p5/index'
 import Profile from '@/contents/profile/index'
 import Resume from '@/contents/resume/index'
 import Stripe from '@/contents/stripe/index'
+import { ScrollLock, ScrollPermit } from '@/modules/scroll-control'
 export default defineComponent({
   components: {
     CardList,
@@ -110,6 +111,7 @@ export default defineComponent({
     })
     const showDialog = (cardId) => {
       if (!cardId) return true
+      ScrollLock()
       context.root.$router.push({
         query: {
           id: cardId,
@@ -117,6 +119,7 @@ export default defineComponent({
       })
     }
     const closeDialog = () => {
+      ScrollPermit()
       context.root.$router.push({
         query: {
           id: '',
@@ -141,11 +144,7 @@ export default defineComponent({
   width: 100%;
   overflow: auto;
 }
-// vue-portal
-.vue-portal-target {
-  width: 100%;
-  height: calc(100% - 20px);
-}
+
 // dialog background animation
 .background-enter,
 .background-leave-to {

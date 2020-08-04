@@ -1,5 +1,5 @@
 <template>
-  <carousel class="Carousel" :perPage="1" :paginationSize="4" :paginationPadding="3">
+  <carousel class="Carousel" :loop="true" :perPage="1" :paginationSize="4" :paginationPadding="3">
     <slot></slot>
   </carousel>
 </template>
@@ -8,5 +8,7 @@
 .Carousel {
   width: 100%;
   height: 100%;
+  display: flex;
+  place-content: center;
 }
 </style>

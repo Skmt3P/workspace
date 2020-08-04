@@ -1,5 +1,5 @@
 <template>
-  <!-- grid layout採用。SPは横2列。PCは縦3列 -->
+  <!-- grid layout採用。SPは横2列。PCは縦2列 -->
   <ul :class="[$device.mobile ? 'CardList' : 'CardListPc']">
     <template v-if="cards.length > 0">
       <template v-for="card in sortedCards">
@@ -42,12 +42,7 @@ export default defineComponent({
       // 最初は白
       if (index === 0) return 'white'
       if (index % 4 === 1) return 'black'
-      // mobileの場合
-      if (context.root.$device.mobile) {
-        if (index % 4 === 2) return 'gray'
-        return 'white'
-      }
-      if (index % 4 === 3) return 'gray'
+      if (index % 4 === 2) return 'gray'
       return 'white'
     }
     // sortedCardsのcomputed
@@ -105,13 +100,14 @@ export default defineComponent({
     display: grid;
     grid-template-columns: repeat(
       auto-fit,
-      minmax(calc((100vh - 100px) / 3), calc((100vh - 100px) / 3))
+      minmax(calc((100vh - 100px) / 2), calc((100vh - 100px) / 3))
     );
     grid-template-rows: repeat(
       auto-fit,
-      minmax(calc((100vh - 100px) / 3), calc((100vh - 100px) / 3))
+      minmax(calc((100vh - 100px) / 2), calc((100vh - 100px) / 3))
     );
     grid-auto-flow: column dense;
+    overflow-y: hidden;
   }
   &Item {
     list-style: none;

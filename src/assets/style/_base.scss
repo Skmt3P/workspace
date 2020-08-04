@@ -1,5 +1,5 @@
-/* Default Layout Style */
 @import '@/assets/style/_variables.scss';
+/* Default Layout Style */
 .TheDefaultLayout {
   height: 95vh;
   width: 100vw;
@@ -22,4 +22,9 @@
     transform: skewY(-2deg);
     transform-origin: bottom right;
   }
+}
+/* vue-portal */
+.vue-portal-target {
+  width: 100%;
+  height: calc(100% - 20px);
 }

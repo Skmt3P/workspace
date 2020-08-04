@@ -1,8 +1,8 @@
 <template>
-  <div class="Stripe">
-    <button @click="openCheckout" class="Stripe_Button">
-      <i class="Stripe_ButtonIcon">{{ icon }}</i>
-      <span class="Stripe_ButtonText">{{'Payment for ' + icon + ' (' + price + ')' }}</span>
+  <div class="Checkout">
+    <button @click="openCheckout" class="Checkout_Button">
+      <i class="Checkout_ButtonIcon">{{ icon }}</i>
+      <span class="Checkout_ButtonText">{{'Payment for ' + icon + ' (' + price + ')' }}</span>
     </button>
   </div>
 </template>
@@ -55,10 +55,9 @@ export default defineComponent({
 })
 </script>
 <style lang="scss">
-.Stripe {
+.Checkout {
   width: 100%;
   height: 100%;
-  padding: 10px;
   &_Button {
     width: 100%;
     height: 100%;
@@ -69,7 +68,7 @@ export default defineComponent({
   }
   &_ButtonIcon {
     display: block;
-    font-size: 10em;
+    font-size: 8rem;
     margin-bottom: 8px;
   }
   &_ButtonText {
