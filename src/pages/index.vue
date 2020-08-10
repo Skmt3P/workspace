@@ -60,13 +60,13 @@ export default defineComponent({
     const cards = reactive([
       {
         id: 'profile',
-        title: 'My Profile',
+        title: 'Profile',
         isActive: true,
         image: 'skmt3p_prof.png',
       },
       {
         id: 'resume',
-        title: 'My Resume',
+        title: 'Resume & CV',
         isActive: true,
         image: 'icon-resume.png',
       },
