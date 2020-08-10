@@ -100,11 +100,11 @@ export default defineComponent({
     display: grid;
     grid-template-columns: repeat(
       auto-fit,
-      minmax(calc((100vh - 100px) / 2), calc((100vh - 100px) / 3))
+      minmax(calc(100% / 3), calc(100% / 3))
     );
     grid-template-rows: repeat(
       auto-fit,
-      minmax(calc((100vh - 100px) / 2), calc((100vh - 100px) / 3))
+      minmax(calc(100% / 3), calc(100% / 2))
     );
     grid-auto-flow: column dense;
     overflow-y: hidden;

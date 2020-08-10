@@ -14,7 +14,10 @@
   }
   &_Main {
     width: 100%;
-    height: calc(90% - 40px - 25px);
+    height: calc(100% - 40px - 25px);
+    @media screen and (max-width: 559px) {
+      height: calc(90% - 40px - 25px);
+    }
   }
   &_Footer {
     width: 100%;
