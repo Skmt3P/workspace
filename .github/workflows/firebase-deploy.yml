@@ -21,8 +21,13 @@ jobs:
           node ./create-pdf.js
       - uses: actions/upload-artifact@v1
         with:
-          name: create-pdf
+          name: resume-en
           path: ./README.pdf
+      - run: node ./create-pdf-ja.js
+      - uses: actions/upload-artifact@v1
+        with:
+          name: resume-ja
+          path: ./ja/README.pdf
   build-and-deploy:
     name: Build and Deploy to Firebase
     runs-on: ubuntu-latest
