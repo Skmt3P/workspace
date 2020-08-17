@@ -97,8 +97,6 @@ Develop Web Applications (HTML5, CSS3, JavaScript(ES6), Backlog)
 We developed a web application (MPA) that provides a recruitment service using HTML5, CSS3, JavaScript (ES6), and Nunjucks. In addition to development, I was responsible for building the development environment, project subleaders, and code reviewers.
 #### Technology
 HTML, CSS, Nunjucks, Adobe XD
-#### Tweet
-納期がタイトで、マークアップにも厳しかったこの案件を通して、真にマークアップを理解できた。
 
 ----------
 
