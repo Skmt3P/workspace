@@ -53,7 +53,7 @@ body_class: markdown-body
 * 当ドキュメントの英語版は、[こちら](https://github.com/Skmt3P/workspace)をご確認ください。
 * ポートフォリオは、[こちら](https://skmt3p.com)になります。
 * CVは、[こちら](https://github.com/Skmt3P/workspace/tree/master/static/docs)から、確認とダウンロードが可能です。
-* RESUMEは、[こちら](https://github.com/Skmt3P/workspace/actions)から、PDFのダウンロードが可能です。最新のActionsから、ArtifactsのPDFファイルをダウンロードしてください。日本語版(ja)と英語版(en)の両方をダウンロードすることができます。
+* RESUMEは、[こちら](https://github.com/Skmt3P/workspace/actions)から、PDFのダウンロードが可能です。最新のActionsから、ArtifactsのPDFファイルをダウンロードしてください。日本語版(ja)と英語版(en)の両方をダウンロードすることができます。ただし、PDFでは画像や絵文字は正しく表示されません。
 
 
 <br /><br />
