@@ -156,7 +156,7 @@ HPOO, ExtJS, PL/SQL, PHP
 I work as an engineer and am the president of [OmusBridge OÜ] (https://omusbridge.com/).
 I also work as an ICT teacher and writer.
 
-### 202001-現在: [OmusBridge OÜ](https://omusbridge.com/)
+### 202001-NOW: [OmusBridge OÜ](https://omusbridge.com/)
 #### Role
 The president
 #### Done
