@@ -53,7 +53,7 @@ body_class: markdown-body
 * 当ドキュメントの英語版は、[こちら](https://github.com/Skmt3P/workspace)をご確認ください。
 * ポートフォリオは、[こちら](https://skmt3p.com)になります。
 * CVは、[こちら](https://github.com/Skmt3P/workspace/tree/master/static/docs)から、確認とダウンロードが可能です。
-* PORTFOLIOは、[こちら](https://github.com/Skmt3P/workspace/actions)から、PDFのダウンロードが可能です。最新のActionsから、ArtifactsのPDFファイルをダウンロードしてください。日本語版(ja)と英語版(en)の両方をダウンロードすることができます。
+* RESUMEは、[こちら](https://github.com/Skmt3P/workspace/actions)から、PDFのダウンロードが可能です。最新のActionsから、ArtifactsのPDFファイルをダウンロードしてください。日本語版(ja)と英語版(en)の両方をダウンロードすることができます。
 
 
 <br /><br />
@@ -74,8 +74,6 @@ Vue.jsとNuxt.jsのフロントエンド開発を主とする一方で上流工�
 C向けのWebアプリケーション開発のプロジェクトに参画し、フロントエンド開発を担当している。
 #### 使用技術
 HTML, CSS, Nuxt.js, Laravel, Adobe XD, Trello
-#### ひとこと
-リモートワークでのNuxt.js案件。4人という少人数でのプロダクト開発。
 
 ----------
 
@@ -90,8 +88,6 @@ wysiwygエディタの調査と技術選定も行った。
 ときおり、デザインをXDで自作する場面も会った。
 #### 使用技術
 HTML, CSS, Nuxt.js, Element UI, Adobe XD
-#### ひとこと
-リモートワークでのNuxt.js案件。Twitter経由での採用であったこともあり、非常に新鮮な体験ができた。
 
 ----------
 
@@ -104,8 +100,6 @@ HTML, CSS, Nuxt.js, Element UI, Adobe XD
 C向けのWebアプリケーション開発のプロジェクトに参画し、XDからのマークアップからフロントエンド開発およびそのチームマネジメントまで担当した。
 #### 使用技術
 HTML, CSS, Nunjucks, Adobe XD
-#### ひとこと
-納期がタイトで、マークアップにも厳しかったこの案件を通して、真にマークアップを理解できた。
 
 ----------
 
@@ -120,8 +114,6 @@ C向けのWebアプリケーション開発のプロジェクトに参画し、�
 また、PM・営業・デザイナーとの折衝も担当し、各担当に向けたVue.js勉強会を主催した。
 #### 使用技術
 Vue.js, Git, Webpack, Docker, mayaa, JPA, Backlog
-#### ひとこと
-独学でVue.jsを会得していたものの、実務で使用するにあたってのギャップに苦しんだ。
 
 ----------
 
@@ -135,8 +127,6 @@ B向けのWebアプリケーション開発のプロジェクトに参画し、P
 フロントエンドおよびRESTFul API開発を担当しながら、 チームマネジメントにも尽力した。
 #### 使用技術
 Angular, Nest.js, Docker,  Node.js, Git, VirtualBox, Vagrant, VSCode, MySQL, PostgreSQL, MongoDB, Python
-#### ひとこと
-はじめてモダンな開発環境での業務。プレイングマネージャーの大変さを痛感した。
 
 ----------
 
@@ -150,8 +140,6 @@ ICTコンサルタント, フロントエンドエンジニア
 契約から納品までワンストップで対応した。
 #### 使用技術
 PHP, HTML, CSS,  jQuery
-#### ひとこと
-労力に対する報酬の少なさを身にしみて感じた。
 
 ----------
 
@@ -165,8 +153,6 @@ PHP, HTML, CSS,  jQuery
 フロントエンドとBFFの開発を担当した。
 #### 使用技術
 HPOO, ExtJS, PL/SQL, PHP
-#### ひとこと
-SAP ERPコンサルタントからキャリアチェンジして最初の案件。日々勉強だった。
 
 <br>
 <a id="topic3" href="#topic3"></a>
@@ -181,8 +167,6 @@ SAP ERPコンサルタントからキャリアチェンジして最初の案件�
 代表取締役
 #### 内容
 事業計画策定, MVP作成
-#### ひとこと
-まだまだこれから。形にしている最中！
 
 ----------
 
@@ -191,8 +175,6 @@ SAP ERPコンサルタントからキャリアチェンジして最初の案件�
 [アンドエンジニア](https://and-engineer.com/)のライター
 #### 内容
 エンジニア向けの記事を取材から執筆まで担当
-#### ひとこと
-情報発信するだけでなく、そのなかで自らにも学びがあって楽しい。
 
 ----------
 
@@ -201,8 +183,6 @@ SAP ERPコンサルタントからキャリアチェンジして最初の案件�
 [Cafetalk](https://cafetalk.com/tutor/profile/?id=145498&lang=ja)の講師
 #### 内容
 プログラミングからOffice製品の使い方。企業で導入すべきメールソフトのお悩みなど、多岐にわたるご相談に回答している。
-#### ひとこと
-ITに慣れていない人に対する話し方などは非常に難しいが、初心者向けという観点は大事にしていきたい所存。
 
 ----------
 
@@ -216,8 +196,6 @@ TIS株式会社のSAP ERPコンサルタント(会計領域認定コンサルタ
 SAP ERPのカスタマイズや帳票作成も行った。
 #### 使用技術
 SAP ERP
-#### ひとこと
-ビジネスを俯瞰的に見ること、他人様の話の聞き方と話し方、ビジネスマナーなど、自分の基礎はこのキャリアがあったからこそだと革新している。
 
 ----------
 
@@ -230,8 +208,6 @@ SAP ERP
 自分のプロダクトを作りつつ、知見を広めるために、業務で使っていないプロダクトを色々触ってきた。
 #### 使用技術
 React.js, GatsbyJS, Nuxt.js, Vue.js, Firebase, CircleCI, GitHub, GitHubActions, Trello, STUDIO, Adobe XD, AppSheet, P5.js, A-Frame, AR.js, Sketch
-#### ひとこと
-この独学がビジネスにも役立っているため、これからも続けていく
 
 <br /><br />
 <a id="topic4" href="#topic4"></a>
