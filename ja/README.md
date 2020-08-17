@@ -39,7 +39,6 @@ body_class: markdown-body
 <h1 align="center">R.D.Sakamoto(Ryu Sakamoto)</h1>
 
 <p align="center">
-  https://github.com/Skmt3P/workspace/blob/master/ja/README.md#topic1
 <a href="https://github.com/Skmt3P/workspace/blob/master/ja/README.md#topic1">🎫 README</a><br /><br />
 <a href="https://github.com/Skmt3P/workspace/blob/master/ja/README.md#topic2">💻 RESUME(ENGINEER)</a><br /><br />
 <a href="https://github.com/Skmt3P/workspace/blob/master/ja/README.md#topic3">👔 RESUME(OTHERS)</a><br /><br />
