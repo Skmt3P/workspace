@@ -32,32 +32,38 @@ stylesheet: https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/gi
 body_class: markdown-body
 ---
 
-# R.D.Sakamoto(Ryu Sakamoto)
+<p align="center">
+<img src="https://github.com/Skmt3P/workspace/blob/master/static/img/heading.png">
+</p>
 
+<h1 align="center">R.D.Sakamoto(Ryu Sakamoto)</h1>
 
-## TOC
+<h2 align="center">TABLE OF CONTENTS</h2>
 
-[Resume](#topic1)
+<p align="center">
+<a href="https://github.com/Skmt3P/workspace#topic1">🎫 README</a><br /><br />
+<a href="https://github.com/Skmt3P/workspace#topic2">💻 RESUME(ENGINEER)</a><br /><br />
+<a href="https://github.com/Skmt3P/workspace#topic3">👔 RESUME(OTHERS)</a><br /><br />
+<a href="https://github.com/Skmt3P/workspace#topic4">🍀 CONTACT & LINKS</a><br /><br />
+</p>
 
-[職務経歴書(エンジニア)](#topic2)
-
-[職務経歴書(その他)](#topic3)
-
-[Links](#topic4)
-
-
-<br>
+<br /><br />
 <a id="topic1" href="#topic1"></a>
 
-## Resume(EN)
+## 🎫 README
 
-PDFを参照させる
+* ここは、R.D.Sakamoto(Ryu Sakamoto)のPORTFOLIO・CV・RESUMEをまとめたリポジトリ**「Workspace」**です。
+* 当ドキュメントの英語版は、[こちら](https://github.com/Skmt3P/workspace)をご確認ください。
+* ポートフォリオは、[こちら](https://skmt3p.com)になります。
+* CVは、[こちら](https://github.com/Skmt3P/workspace/tree/master/static/docs)から、確認とダウンロードが可能です。
+* PORTFOLIOは、[こちら](https://github.com/Skmt3P/workspace/actions)から、PDFのダウンロードが可能です。最新のActionsから、ArtifactsのPDFファイルをダウンロードしてください。日本語版(ja)と英語版(en)の両方をダウンロードすることができます。
 
-<br>
+
+<br /><br />
 <a id="topic2" href="#topic2"></a>
 
-## 職務経歴書(エンジニア)(JA)
-**「日本とエストニアと世界を繋ぐマルチスタックなWebフロントエンジニア」**
+## 💻 RESUME(ENGINEER)
+**「日本とエストニアと世界を繋ぐマルチスタックなWebフロントエンジニア」** <br />
 Vue.jsとNuxt.jsのフロントエンド開発を主とする一方で上流工程の業務もチョットデキル。
 マルチスタックとコミュニケーションが売り。
 2017年よりSAP ERPコンサルタントからフロントエンドエンジニアとしてキャリアチェンジを果たした。
@@ -168,8 +174,8 @@ SAP ERPコンサルタントからキャリアチェンジして最初の案件�
 <br>
 <a id="topic3" href="#topic3"></a>
 
-## 職務経歴書(その他)(JA)
-**「コンサルタントから事務から開発までデキる！マルチスタックなエストニア企業社長」**
+## 👔 RESUME(OTHERS)
+**「コンサルタントから事務から開発までデキる！マルチスタックなエストニア企業社長」** <br />
 エンジニアとして働きながら、[OmusBridge OÜ](https://omusbridge.com/)の代表取締役を務めている。
 他にも、ICT講師やライター業にも勤しんでいる。
 
@@ -230,16 +236,28 @@ React.js, GatsbyJS, Nuxt.js, Vue.js, Firebase, CircleCI, GitHub, GitHubActions, 
 #### ひとこと
 この独学がビジネスにも役立っているため、これからも続けていく
 
-<br>
+<br /><br />
 <a id="topic4" href="#topic4"></a>
 
-## Links
-[Twitter](https://twitter.com/skmt3p)
+## 🍀 CONTACT & LINKS
+<p align="center">
+<a href="https://velocv.com/skmt3p" target="_blank" rel=”noopener noreferrer”><img src="https://github.com/Skmt3P/workspace/blob/master/static/img/qr_cv-en.png" width="80px"></a>
+<a href="https://velocv.com/skmt3p/ja" target="_blank" rel=”noopener noreferrer”><img src="https://github.com/Skmt3P/workspace/blob/master/static/img/qr_cv-ja.png" width="80px"></a>
+<a href="https://www.facebook.com/Sakamoto3P" target="_blank" rel=”noopener noreferrer”><img src="https://github.com/Skmt3P/workspace/blob/master/static/img/qr_facebook.png" width="80px"></a>
+<a href="https://github.com/Skmt3P" target="_blank" rel=”noopener noreferrer”><img src="https://github.com/Skmt3P/workspace/blob/master/static/img/qr_github.png" width="80px"></a>
+<a href="https://linkedin.com/in/san-sakamoto-91957152/" target="_blank" rel=”noopener noreferrer”><img src="https://github.com/Skmt3P/workspace/blob/master/static/img/qr_linkedin.png" width="80px"></a>
+<a href="https://omusbridge.com" target="_blank" rel=”noopener noreferrer”><img src="https://github.com/Skmt3P/workspace/blob/master/static/img/qr_omusbridge.png" width="80px"></a>
+</p>
 
-[LinkedIn](https://linkedin.com/in/san-sakamoto-91957152/)
+<p align="center">
+<a href="https://velocv.com/skmt3p" target="_blank" rel=”noopener noreferrer”>Velo CV(EN)</a><br /><br />
+<a href="https://velocv.com/skmt3p/ja" target="_blank" rel=”noopener noreferrer”>Velo CV(JA)</a><br /><br />
+<a href="https://www.facebook.com/Sakamoto3P" target="_blank" rel=”noopener noreferrer”>Facebook</a><br /><br />
+<a href="https://github.com/Skmt3P" target="_blank" rel=”noopener noreferrer”>GitHub</a><br /><br />
+<a href="https://linkedin.com/in/san-sakamoto-91957152/" target="_blank" rel=”noopener noreferrer”>LinkedIn</a><br /><br />
+<a href="https://omusbridge.com" target="_blank" rel=”noopener noreferrer”>OmusBridge OÜ</a><br /><br />
+</p>
 
-[Velo CV(EN)](https://velocv.com/skmt3p)
-
-[Velo CV(JA)](https://velocv.com/skmt3p/ja)
-
-[note.com(JA)](https://note.com/skmt3p)
+<p align="right">
+<img src="https://github.com/Skmt3P/workspace/blob/master/static/img/logo_omusbridge.png" width="80px" />
+</p>
