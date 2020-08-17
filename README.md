@@ -59,7 +59,7 @@ body_class: markdown-body
 <a id="topic2" href="#topic2"></a>
 
 ## 💻 RESUME(ENGINEER)
-**A multi-stack web front-end engineer who connects Japan, Estonia and the world!** <br />
+"**A multi-stack web front-end engineer who connects Japan, Estonia and the world!**" <br />
 I mainly do front-end development for Vue.js and Nuxt.js, but I'm also a decent upstream developer.
 Multi-stack and communication is my selling points.
 In 2017, I made a career change from an SAP ERP consultant to a front-end engineer.
