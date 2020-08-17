@@ -50,7 +50,7 @@ body_class: markdown-body
 ## 🎫 README
 
 * This is ** "Workspace" ** repository of PORTFOLIO, CV and RESUME of R.D.Sakamoto(Ryu Sakamoto) ** "Workspace" **.
-* The Japanese version of this document can be found at [here](https://github.com/Skmt3P/workspace/ja).
+* The Japanese version of this document can be found at [here](https://github.com/Skmt3P/workspace/tree/master/ja).
 * The PORTFOLIO can be found at [here](https://skmt3p.com).
 * The CV can be viewed and downloaded from [here](https://github.com/Skmt3P/workspace/tree/master/static/docs).
 * RESUME is available for download as a PDF from [here](https://github.com/Skmt3P/workspace/actions). Download the PDF file of Artifacts from the latest Actions. Both the Japanese (en) and English (en) versions are available for download.
