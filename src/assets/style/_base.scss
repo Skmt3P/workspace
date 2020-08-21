@@ -32,7 +32,8 @@
   height: calc(100% - 20px);
 }
 /* vue-carousel */
-.VueCarousel-wrapper {
+.VueCarousel .VueCarousel-wrapper {
   height: 100%;
+  overflow-x: hidden;
   overflow-y: scroll;
 }
