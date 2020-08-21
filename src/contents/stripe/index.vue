@@ -7,10 +7,10 @@
       <Checkout :sku="skuRamen" icon="🍜" price="10€" />
     </slide>
     <slide class="Stripe_Slide">
-      <Checkout :sku="skuSake" icon="🍶" price="30€"/>
+      <Checkout :sku="skuSake" icon="🍶" price="30€" />
     </slide>
     <slide class="Stripe_Slide">
-      <Checkout :sku="skuSukiyaki" icon="🍖" price="50€"/>
+      <Checkout :sku="skuSukiyaki" icon="🍖" price="50€" />
     </slide>
     <slide class="Stripe_Slide">
       <Checkout :sku="skuSushi" icon="🍣" price="100€" />

@@ -1,5 +1,11 @@
 <template>
-  <carousel class="Carousel" :loop="true" :perPage="1" :paginationSize="4" :paginationPadding="3">
+  <carousel
+    class="Carousel"
+    :loop="true"
+    :perPage="1"
+    :paginationSize="4"
+    :paginationPadding="3"
+  >
     <slot></slot>
   </carousel>
 </template>

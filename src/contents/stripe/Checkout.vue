@@ -2,7 +2,9 @@
   <div class="Checkout">
     <button @click="openCheckout" class="Checkout_Button">
       <i class="Checkout_ButtonIcon">{{ icon }}</i>
-      <span class="Checkout_ButtonText">{{'Payment for ' + icon + ' (' + price + ')' }}</span>
+      <span class="Checkout_ButtonText">{{
+        'Payment for ' + icon + ' (' + price + ')'
+      }}</span>
     </button>
   </div>
 </template>
