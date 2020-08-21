@@ -21,14 +21,3 @@ export default defineComponent({
   },
 })
 </script>
-<style lang="scss" scoped>
-@import '@/assets/style/_variables.scss';
-.Profile {
-  height: 100%;
-  overflow-y: scroll;
-  &_Slide {
-    height: 100%;
-    overflow-y: scroll;
-  }
-}
-</style>

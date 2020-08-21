@@ -31,3 +31,8 @@
   width: 100%;
   height: calc(100% - 20px);
 }
+/* vue-carousel */
+.VueCarousel-wrapper {
+  height: 100%;
+  overflow-y: scroll;
+}
