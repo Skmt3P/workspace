@@ -60,6 +60,8 @@
     display: flex;
     align-items: center;
     margin-bottom: 30px;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
   }
   &_HeadLines {
     flex: 1;

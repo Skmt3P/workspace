@@ -16,5 +16,6 @@
   height: 100%;
   display: flex;
   place-content: center;
+  overflow-y: scroll;
 }
 </style>
