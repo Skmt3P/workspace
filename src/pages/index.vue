@@ -43,7 +43,10 @@ import Pfive from '@/contents/p5/index'
 import Profile from '@/contents/profile/index'
 import Resume from '@/contents/resume/index'
 import Stripe from '@/contents/stripe/index'
-import { ScrollLock, ScrollPermit } from '@/modules/scroll-control'
+import {
+  ScrollLockWithTheEx,
+  ScrollPermitWithTheEx,
+} from '@/modules/scroll-control'
 export default defineComponent({
   components: {
     CardList,
@@ -111,7 +114,7 @@ export default defineComponent({
     })
     const showDialog = (cardId) => {
       if (!cardId) return true
-      ScrollLock()
+      ScrollLockWithTheEx(document.querySelector('.DialogContent'))
       context.root.$router.push({
         query: {
           id: cardId,
@@ -119,7 +122,7 @@ export default defineComponent({
       })
     }
     const closeDialog = () => {
-      ScrollPermit()
+      ScrollPermitWithTheEx(document.querySelector('.DialogContent'))
       context.root.$router.push({
         query: {
           id: '',

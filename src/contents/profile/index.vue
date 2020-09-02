@@ -4,19 +4,19 @@
       <Top />
     </slide>
     <slide class="Profile_Slide">
-      <NoContent />
+      <Social />
     </slide>
   </Carousel>
 </template>
 <script>
 import { defineComponent } from '@vue/composition-api'
 import Top from '@/contents/profile/top'
-import NoContent from '@/contents/NoContent'
+import Social from '@/contents/profile/social'
 import Carousel from '@/components/atoms/Carousel'
 export default defineComponent({
   components: {
     Top,
-    NoContent,
+    Social,
     Carousel,
   },
 })

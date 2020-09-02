@@ -1,12 +1,10 @@
 <template>
-  <div class="Checkout">
-    <button @click="openCheckout" class="Checkout_Button">
-      <i class="Checkout_ButtonIcon">{{ icon }}</i>
-      <span class="Checkout_ButtonText">{{
-        'Payment for ' + icon + ' (' + price + ')'
-      }}</span>
-    </button>
-  </div>
+  <button class="StripeCheckout" @click="openCheckout">
+    <i class="StripeCheckout_Icon">{{ icon }}</i>
+    <span class="StripeCheckout_Text">{{
+      'Payment for ' + icon + ' (' + price + ')'
+    }}</span>
+  </button>
 </template>
 <script>
 import { defineComponent } from '@vue/composition-api'
@@ -56,27 +54,21 @@ export default defineComponent({
   },
 })
 </script>
-<style lang="scss">
-.Checkout {
+<style lang="scss" scoped>
+@import '@/assets/style/_variables.scss';
+.StripeCheckout {
   width: 100%;
   height: 100%;
-  &_Button {
-    width: 100%;
-    height: 100%;
-    &Image {
-      max-width: 100%;
-      max-height: 100%;
-    }
-  }
-  &_ButtonIcon {
+  &_Icon {
     display: block;
-    font-size: 8rem;
+    font-size: 17.5vw;
     margin-bottom: 8px;
   }
-  &_ButtonText {
+  &_Text {
     display: block;
-    text-align: center;
-    font-size: 0.8rem;
+    font-size: 3vw;
+    color: $--c-gray-0;
+    width: 100%;
   }
 }
 </style>

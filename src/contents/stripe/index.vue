@@ -19,7 +19,7 @@
 </template>
 <script>
 import { defineComponent } from '@vue/composition-api'
-import Checkout from '@/contents/stripe/Checkout'
+import Checkout from '@/contents/stripe/checkout'
 import Carousel from '@/components/atoms/Carousel'
 export default defineComponent({
   components: {

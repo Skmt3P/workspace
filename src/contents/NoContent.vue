@@ -6,13 +6,10 @@
 </template>
 <style lang="scss">
 .NoContent {
-  width: 100%;
-  height: 100%;
-  padding: 10px;
   &_ButtonIcon {
     display: block;
     text-align: center;
-    font-size: 10em;
+    font-size: 8em;
     margin-bottom: 10px;
   }
   &_ButtonText {

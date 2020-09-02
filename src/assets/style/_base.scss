@@ -1,5 +1,8 @@
 @import '@/assets/style/_variables.scss';
 /* Default Layout Style */
+li {
+  list-style: none;
+}
 .TheDefaultLayout {
   height: 95vh;
   width: 100vw;
@@ -34,8 +37,33 @@
   height: calc(100% - 20px);
 }
 /* vue-carousel */
-.VueCarousel .VueCarousel-wrapper {
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: scroll;
+.VueCarousel {
+  .VueCarousel-wrapper {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    .VueCarousel-inner {
+      height: 100% !important;
+      .VueCarousel-slide {
+        display: grid;
+        place-content: center;
+        place-items: center;
+        position: relative;
+          > div {
+          position: absolute;
+          max-width: 100%;
+          max-height: 100%;
+          min-width: 30%;
+          min-height: 30%;
+          padding: 10px;
+          @media screen and (max-width: 559px) {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+          }
+        }
+      }
+    }
+  }
 }

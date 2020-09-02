@@ -51,10 +51,6 @@
 <style lang="scss" scoped>
 @import '@/assets/style/_variables.scss';
 .ProfileTop {
-  width: 100%;
-  height: 100%;
-  min-width: 50vw;
-  min-height: 50vh;
   &_Header {
     width: 100%;
     display: flex;
