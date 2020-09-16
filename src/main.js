@@ -8,7 +8,7 @@ import VueHead from 'vue-head'
 import VueWait from 'vue-wait'
 import device from 'vue-device-detector'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { BreedingRhombusSpinner } from 'epic-spinners'
+import { FulfillingBouncingCircleSpinner } from 'epic-spinners'
 import router from './modules/router'
 import App from './App'
 
@@ -21,7 +21,7 @@ Vue.use(VueHead)
 Vue.use(VueWait)
 Vue.use(device)
 Vue.component('FontAwesomeIcon', FontAwesomeIcon)
-Vue.component('BreedingRhombusSpinner', BreedingRhombusSpinner)
+Vue.component('FulfillingBouncingCircleSpinner', FulfillingBouncingCircleSpinner)
 
 new Vue({
   el: '#app',

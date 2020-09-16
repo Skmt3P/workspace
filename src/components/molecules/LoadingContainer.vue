@@ -1,11 +1,11 @@
 <template>
-<v-wait for='something to load'>
-  <BreedingRhombusSpinner
-    slot='waiting'
-    :animation-duration="1500"
-    :size="64"
-    :color="'#ff1d5e'"
-  />
+<v-wait :for='name' class="LoadingContainer">
+  <template slot='waiting'>
+    <FulfillingBouncingCircleSpinner
+      :animation-duration="1500"
+      :color="'#777'"
+    />
+  </template>
   <slot name="content"></slot>
 </v-wait>
 </template>
@@ -20,7 +20,7 @@ export default defineComponent({
     },
     waiting: {
       type: Boolean,
-      default: true,
+      default: false,
       required: true,
     },
   },
@@ -31,12 +31,24 @@ export default defineComponent({
     const endLoading = () => {
       return context.root.$wait.end(props.name)
     }
-    startLoading()
-    watch(() => {props.waiting}, (newVal, oldVal) => {
+    props.waiting ? startLoading() : endLoading()
+    watch(() => props.waiting, (newVal, oldVal) => {
       if (newVal === oldVal) return
-      console.log(newVal, oldVal)
       return props.waiting ? startLoading() : endLoading() 
     })
   }
 })
 </script>
+<style lang="scss">
+.LoadingContainer {
+  > span {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    > div {
+      margin: auto;
+    }
+  }
+}
+</style>

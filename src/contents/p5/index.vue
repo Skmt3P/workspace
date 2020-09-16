@@ -1,7 +1,11 @@
 <template>
-  <Carousel class="Pfive_Carousel">
+  <Carousel class="Pfive_Carousel" @changed-slide="changeActiveSlideNumber" >
     <slide class="Pfive_Slide">
-      <Tutorial @click="waitingTest" name="tutorial" :waiting="waiting" />
+      <PfiveContainer name="tutorial" :waiting="!(activeSlideNumber === 0)">
+        <template v-slot:p-five>
+          <Tutorial />
+        </template>
+      </PfiveContainer>
     </slide>
     <slide class="Pfive_Slide">
       <NoContent />
@@ -9,27 +13,34 @@
   </Carousel>
 </template>
 <script>
-import { defineComponent, reactive } from '@vue/composition-api'
+import { defineComponent, reactive, toRefs } from '@vue/composition-api'
 import NoContent from '@/contents/NoContent'
+import PfiveContainer from '@/components/organisms/PfiveContainer'
 import Tutorial from '@/contents/p5/tutorial'
 import Carousel from '@/components/atoms/Carousel'
 export default defineComponent({
   components: {
-    Tutorial,
     NoContent,
-    Carousel,
+    PfiveContainer,
+    Tutorial,
+    Carousel
   },
   setup(){
-    const state = reactive({
-      waiting: true
-    })
-    const waitingTest = () => {
-      console.log('clicked')
-      return state.waiting = !state.waiting
+    const useSlideState = () => {
+      const slideState = reactive({
+        activeSlideNumber: 0
+      })
+      return {
+        ...toRefs(slideState) 
+      }
     }
-    return {
-      waiting: state.waiting,
-      waitingTest
+    const changeActiveSlideNumber = number => {
+      return activeSlideNumber.value = number
+    }
+    const { activeSlideNumber } = useSlideState()
+    return  {
+      activeSlideNumber,
+      changeActiveSlideNumber
     }
   }
 })
