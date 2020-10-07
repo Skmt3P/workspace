@@ -8,11 +8,7 @@ export function TheEmptyLayout(Page) {
       Page,
     },
     render() {
-      return h(
-        'div',
-        { class: "TheEmptyLayout" },
-        [h(Page, {})]
-      )
+      return h('div', { class: 'TheEmptyLayout' }, [h(Page, {})])
     },
   })
 }

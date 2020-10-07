@@ -13,14 +13,14 @@
 <script>
 import { defineComponent } from '@vue/composition-api'
 export default defineComponent({
-  setup(props, context){
-    const onChangeSlide = dataset => {
+  setup(props, context) {
+    const onChangeSlide = (dataset) => {
       context.emit('changed-slide', dataset)
     }
     return {
-      onChangeSlide
+      onChangeSlide,
     }
-  }
+  },
 })
 </script>
 <style lang="scss">

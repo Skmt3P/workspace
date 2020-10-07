@@ -1,5 +1,5 @@
 <template>
-  <Carousel class="Pfive_Carousel" @changed-slide="changeActiveSlideNumber" >
+  <Carousel class="Pfive_Carousel" @changed-slide="changeActiveSlideNumber">
     <slide class="Pfive_Slide">
       <PfiveContainer name="tutorial" :waiting="!(activeSlideNumber === 0)">
         <template v-slot:p-five>
@@ -23,25 +23,25 @@ export default defineComponent({
     NoContent,
     PfiveContainer,
     Tutorial,
-    Carousel
+    Carousel,
   },
-  setup(){
+  setup() {
     const useSlideState = () => {
       const slideState = reactive({
-        activeSlideNumber: 0
+        activeSlideNumber: 0,
       })
       return {
-        ...toRefs(slideState) 
+        ...toRefs(slideState),
       }
     }
-    const changeActiveSlideNumber = number => {
-      return activeSlideNumber.value = number
+    const changeActiveSlideNumber = (number) => {
+      return (activeSlideNumber.value = number)
     }
     const { activeSlideNumber } = useSlideState()
-    return  {
+    return {
       activeSlideNumber,
-      changeActiveSlideNumber
+      changeActiveSlideNumber,
     }
-  }
+  },
 })
 </script>

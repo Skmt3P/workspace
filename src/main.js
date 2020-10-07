@@ -1,6 +1,6 @@
 import '../node_modules/ress/dist/ress.min.css'
 import './modules/fontawesome'
-import Vue from 'vue'
+import Vue, { createApp, h } from 'vue'
 import VueCompositionApi from '@vue/composition-api'
 import PortalVue from 'portal-vue'
 import VueCarousel from 'vue-carousel'
@@ -21,11 +21,15 @@ Vue.use(VueHead)
 Vue.use(VueWait)
 Vue.use(device)
 Vue.component('FontAwesomeIcon', FontAwesomeIcon)
-Vue.component('FulfillingBouncingCircleSpinner', FulfillingBouncingCircleSpinner)
+Vue.component(
+  'FulfillingBouncingCircleSpinner',
+  FulfillingBouncingCircleSpinner
+)
 
-new Vue({
+createApp({
   el: '#app',
-  router,
   wait: new VueWait(),
-  render: (h) => h(App),
-}).$mount('#app')
+  render: () => h(App),
+})
+  .use(router)
+  .mount('#app')

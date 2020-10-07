@@ -12,15 +12,15 @@ export function TheDefaultLayout(Page) {
       TheGlobalFooter,
     },
     render() {
-      return h(
-        'div',
-        { class: 'TheDefaultLayout' },
-        [
-          h('header', { class: 'TheDefaultLayout_Header' }, [h(TheGlobalHeader, {})]),
-          h('main', { class: 'TheDefaultLayout_Main' }, [h(Page, {})]),
-          h('footer', { class: 'TheDefaultLayout_Footer' }, [h(TheGlobalFooter, {})])
-        ]
-      )
+      return h('div', { class: 'TheDefaultLayout' }, [
+        h('header', { class: 'TheDefaultLayout_Header' }, [
+          h(TheGlobalHeader, {}),
+        ]),
+        h('main', { class: 'TheDefaultLayout_Main' }, [h(Page, {})]),
+        h('footer', { class: 'TheDefaultLayout_Footer' }, [
+          h(TheGlobalFooter, {}),
+        ]),
+      ])
     },
   })
 }

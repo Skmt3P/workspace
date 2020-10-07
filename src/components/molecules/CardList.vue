@@ -2,8 +2,8 @@
   <!-- grid layout採用。SPは横2列。PCは縦2列 -->
   <ul :class="[$device.mobile ? 'CardList' : 'CardListPc']">
     <template v-if="cards.length > 0">
-      <template v-for="card in sortedCards">
-        <li class="CardListItem" :key="card.id">
+      <template v-for="card in sortedCards" :key="card.id">
+        <li class="CardListItem">
           <Card
             :id="card.id"
             :title="card.title"

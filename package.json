@@ -1,14 +1,13 @@
 {
   "name": "workspace",
   "version": "1.0.0",
-  "license": "MIT",
   "scripts": {
-    "dev": "yarn build:dev && cross-env NODE_ENV=development HOST=0.0.0.0 PORT=8080 yarn serve",
-    "dev:local": "yarn build:dev && yarn serve",
     "serve": "vue-cli-service serve",
+    "lint": "vue-cli-service lint",
     "build:dev": "vue-cli-service build --mode development",
     "build:prod": "vue-cli-service build --mode production",
-    "lint": "vue-cli-service lint"
+    "dev": "yarn build:dev && cross-env NODE_ENV=development HOST=0.0.0.0 PORT=8080 yarn serve",
+    "dev:local": "yarn build:dev && yarn serve"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
@@ -30,7 +29,7 @@
     "portal-vue": "^2.1.7",
     "ress": "^3.0.0",
     "three": "^0.121.1",
-    "vue": "^2.6.11",
+    "vue": "^3.0.0-beta.1",
     "vue-carousel": "^0.18.0",
     "vue-device-detector": "^1.1.3",
     "vue-head": "^2.2.0",
@@ -41,6 +40,7 @@
     "@vue/cli-plugin-babel": "~4.5.7",
     "@vue/cli-plugin-eslint": "~4.5.7",
     "@vue/cli-service": "~4.5.7",
+    "@vue/compiler-sfc": "^3.0.0-beta.1",
     "babel-eslint": "^10.0.3",
     "eslint": "^7.2.0",
     "eslint-config-prettier": "^6.11.0",
@@ -50,11 +50,11 @@
     "node-sass": "^4.14.1",
     "prettier": "^2.0.5",
     "sass-loader": "^10.0.2",
-    "stylelint": "^13.6.0",
-    "vue-template-compiler": "^2.6.11"
+    "stylelint": "^13.6.0"
   },
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "license": "MIT"
 }

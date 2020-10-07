@@ -1,13 +1,10 @@
 <template>
-  <a class="ResumeLinks"
-    :href="link"
-    target="_blank"
-    rel="noopener noreferrer">
+  <a class="ResumeLinks" :href="link" target="_blank" rel="noopener noreferrer">
     <i class="ResumeLinks_Icon">
       {{ icon }}
     </i>
     <span class="ResumeLinks_Text">
-      {{text}}
+      {{ text }}
     </span>
   </a>
 </template>
@@ -30,7 +27,7 @@ export default defineComponent({
       required: true,
       default: null,
     },
-  }
+  },
 })
 </script>
 <style lang="scss" scoped>

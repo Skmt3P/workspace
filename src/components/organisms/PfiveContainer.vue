@@ -6,23 +6,23 @@
   </LoadingContainer>
 </template>
 <script>
-  import { defineComponent } from '@vue/composition-api'
-  import LoadingContainer from '@/components/molecules/LoadingContainer'
-  export default defineComponent({
-    props: {
-      name: {
-        type: String,
-        default: null,
-        required: true,      
-      },
-      waiting: {
-        type: Boolean,
-        default: false,
-        required: true,
-      },
+import { defineComponent } from '@vue/composition-api'
+import LoadingContainer from '@/components/molecules/LoadingContainer'
+export default defineComponent({
+  props: {
+    name: {
+      type: String,
+      default: null,
+      required: true,
     },
-    components: {
-      LoadingContainer
-    }
-  })
+    waiting: {
+      type: Boolean,
+      default: false,
+      required: true,
+    },
+  },
+  components: {
+    LoadingContainer,
+  },
+})
 </script>

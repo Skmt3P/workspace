@@ -11,14 +11,14 @@ import {
   faFacebook,
   faTwitter,
   faSkype,
-  faMediumM
+  faMediumM,
 } from '@fortawesome/free-brands-svg-icons'
 import {
   faBuilding,
   faPaperPlane,
   faHeart,
   faSurprise,
-  faCommentDots
+  faCommentDots,
 } from '@fortawesome/free-regular-svg-icons'
 
 library.add(
