@@ -4,7 +4,7 @@ const eventPreventer = (event) => {
 }
 
 const LockTargetSelector = (event) => {
-  if (_self.exEl.contains(event.target)) {
+  if (_self.exEl && _self.exEl.contains(event.target)) {
     return event.stopPropagation()
   }
   return eventPreventer(event)
