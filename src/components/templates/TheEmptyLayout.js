@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import { h } from 'vue'
 
 export function TheEmptyLayout(Page) {
   return Vue.extend({
@@ -7,10 +8,10 @@ export function TheEmptyLayout(Page) {
       Page,
     },
     render() {
-      return (
-        <div class="TheEmptyLayout">
-          <Page />
-        </div>
+      return h(
+        'div',
+        { class: "TheEmptyLayout" },
+        [h(Page, {})]
       )
     },
   })
