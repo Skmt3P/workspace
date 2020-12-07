@@ -64,7 +64,19 @@ I mainly do front-end development for Vue.js and Nuxt.js, but I'm also a decent 
 Multi-stack and communication is my selling points.
 In 2017, I made a career change from an SAP ERP consultant to a front-end engineer.
 
-### 202002-NOW: Development Web Applications (Nuxt.js)
+### 202010-NOW: Development Web Applications (Nuxt.js)
+#### Role
+Front-end Engineer(Tech Inc.,)
+#### Participation Phase
+Develop Web Applications (Nuxt.js)
+#### Business Description
+I worked remotely to develop the app. I developed an online exhibition web app. I was responsible for the markup and development of the front end using Nuxt.js. I had a hard time getting used to it because it was a project with coding rules that strictly followed Atomic "Design". It was also my first experience with Nuxt.js + TypeScript in practice.
+#### Technology
+HTML, SASS, Nuxt.js, TypeScript, Firebase, Figma, Backlog
+
+----------
+
+### 202002-12: Development Web Applications (Nuxt.js)
 #### Role
 Front-end Engineer(Tech Inc.,)
 #### Participation Phase
@@ -72,7 +84,7 @@ Develop Web Applications (Nuxt.js)
 #### Business Description
 I worked remotely to develop the app. The app is specific to the music industry and allows users to manage your playlists and albums. I was responsible for the markup and development of the front end using Nuxt.js, the API was sufficient It was not maintained and it was very difficult to work with the back-end team.
 #### Technology
-HTML, CSS, Nuxt.js, Laravel, Adobe XD, Trello
+HTML, CSS, Nuxt.js, Laravel, Adobe XD, Trello, Chart.js
 
 ----------
 
@@ -151,7 +163,7 @@ HPOO, ExtJS, PL/SQL, PHP
 
 ## 👔 RESUME(OTHERS)
 **I can do everything from consultancy to administration to development!  President of a multi-stack Estonian company!** <br />
-I work as an engineer and am the president of [OmusBridge OÜ] (https://omusbridge.com/).
+I work as an engineer and am the president of [OmusBridge OÜ](https://omusbridge.com/).
 I also work as an ICT teacher and writer.
 
 ### 202001-NOW: [OmusBridge OÜ](https://omusbridge.com/)
@@ -159,6 +171,8 @@ I also work as an ICT teacher and writer.
 The president
 #### Done
 Business planning and MVP creation.
+#### Technology
+Adobe XD, VRChat, NeosVR, Unity, Blender
 
 ----------
 
@@ -166,7 +180,8 @@ Business planning and MVP creation.
 #### Role
 [And Engineer](https://and-engineer.com/) writer
 #### Done
-Responsible for everything from reporting to writing articles for engineers
+Responsible for everything from reporting to writing articles for engineers. <br />
+https://and-engineer.com/writers/Xnb9txIAACoAIDVN/page/1
 
 ----------
 
