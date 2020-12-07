@@ -170,7 +170,9 @@ I also work as an ICT teacher and writer.
 #### Role
 The president
 #### Done
-Business planning and MVP creation.
+For our products, we are in the phase of business planning and MVP creation. <br />
+At the Estonian startup pitch event "Brain Hunt", we were selected as one of the top 100 business ideas.<br />
+In addition, we are also working as an intermediary for worldwide engineers.
 #### Technology
 Adobe XD, VRChat, NeosVR, Unity, Blender
 
