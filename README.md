@@ -163,8 +163,8 @@ HPOO, ExtJS, PL/SQL, PHP
 
 ## 👔 RESUME(OTHERS)
 **I can do everything from consultancy to administration to development!  President of a multi-stack Estonian company!** <br />
-I work as an engineer and am the president of [OmusBridge OÜ](https://omusbridge.com/).
-I also work as an ICT teacher and writer.
+I work as an engineer and the president of [OmusBridge OÜ](https://omusbridge.com/).
+I also work as an ICT teacher and a tecg writer.
 
 ### 202001-NOW: [OmusBridge OÜ](https://omusbridge.com/)
 #### Role
@@ -174,7 +174,19 @@ For our products, we are in the phase of business planning and MVP creation. <br
 At the Estonian startup pitch event "Brain Hunt", we were selected as one of the top 100 business ideas.<br />
 In addition, we are also working as an intermediary for worldwide engineers.
 #### Technology
-Adobe XD, VRChat, NeosVR, Unity, Blender
+Adobe XD, Hubs
+
+----------
+
+### 202008-NOW: VR Activities
+#### Role
+Eventer, 3D Creator
+#### Done
+I designed and did 3D modeling of avatars and worlds for the Metaverse service. <br />
+I also manage events for the Metaverse service.<br />
+I'm enjoying them.
+#### Technology
+VRChat, NeosVR, ChilloutVR, Hubs, DMM Connect VR, VRM, Unity, Blender
 
 ----------
 
