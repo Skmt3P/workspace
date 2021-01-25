@@ -181,6 +181,20 @@ HPOO, ExtJS, PL/SQL, PHP
 自社プロダクトについては、事業計画策定, MVP作成のフェーズにある。<br />
 エストニアのスタートアップピッチイベント「Brain Hunt」では、TOP100のビジネスアイデアに選出された。<br />
 また、海外エンジニアの案件仲介も並行して行っている。
+#### 使用技術
+Adobe XD, Hubs
+
+----------
+
+### 202008-現在: VRでの活動
+#### ポジション
+イベンター、 3Dクリエイター
+#### 内容
+メタバースサービスにおける、アバターやワールドのデザイン・モデリング<br />
+同サービス内でのイベント主催も実施。<br />
+それらを、純粋に楽しんでいる。
+#### 使用技術
+Adobe XD, Hubs
 
 ----------
 
@@ -189,6 +203,8 @@ HPOO, ExtJS, PL/SQL, PHP
 [アンドエンジニア](https://and-engineer.com/)のライター
 #### 内容
 エンジニア向けの記事を取材から執筆まで担当([関連リンク](https://and-engineer.com/writers/Xnb9txIAACoAIDVN/page/1))
+#### 使用技術
+VRChat, NeosVR, ChilloutVR, Hubs, DMM Connect VR, VRM, Unity, Blender
 
 ----------
 
