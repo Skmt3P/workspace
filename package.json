@@ -29,7 +29,7 @@
     "p5": "^1.0.0",
     "portal-vue": "^2.1.7",
     "ress": "^2.0.4",
-    "three": "^0.118.3",
+    "three": "^0.125.0",
     "vue": "^2.6.11",
     "vue-carousel": "^0.18.0",
     "vue-device-detector": "^1.1.3",
