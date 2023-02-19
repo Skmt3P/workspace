@@ -59,12 +59,26 @@ body_class: markdown-body
 <a id="topic2" href="#topic2"></a>
 
 ## 💻 RESUME(ENGINEER)
-"**A multi-stack web front-end engineer who connects Japan, Estonia and the world!**" <br />
+"**A Multi-stack Web Front Desk Engineer with two bases in Japan and Estonia.**" <br />
 I mainly do front-end development for Vue.js and Nuxt.js, but I'm also a decent upstream developer.
-Multi-stack and communication is my selling points.
+Multi-stack is my selling points.
 In 2017, I made a career change from an SAP ERP consultant to a front-end engineer.
 
-### 202010-NOW: Development Web Applications (Nuxt.js)
+### 202103-NOW: Development Web Pages and Web Applications at VR Inc, (Nuxt.js)
+#### Role
+Chief Front-end Engineer(Tech Inc.,)
+#### Participation Phase
+Web Architect Design, 
+Develop Web Pages and Web Applications (Nuxt.js), 
+Team Management
+#### Business Description
+I joined the team as a full-time employee, architecting, setting coding guidelines, setting up the team, and managing the organization, as well as developing numerous websites and Web Apps as a Web Front End Engineer.
+#### Technology
+HTML, SASS, Nuxt.js, TypeScript, Zod, Figma, AdobeXD, Jira, Github Actions, CircleCI
+
+----------
+
+### 202010-202108: Development Web Applications (Nuxt.js)
 #### Role
 Front-end Engineer(Tech Inc.,)
 #### Participation Phase
