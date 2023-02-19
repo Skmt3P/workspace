@@ -14,7 +14,7 @@ jobs:
           fetch-depth: 1
       - uses: actions/setup-node@v1
         with:
-          node-version: "13.6.0"
+          node-version: "16"
       - run: |
           node -v
           npm install
@@ -28,28 +28,3 @@ jobs:
         with:
           name: resume-ja
           path: ./ja/README.pdf
-  build-and-deploy:
-    name: Build and Deploy to Firebase
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repo
-        uses: actions/checkout@master
-      - name: Install Dependencies
-        run: npm install
-      - name: Build
-        run: npm run build:prod
-      - name: Check　Dir(1)
-        run: cd /home/runner/work/workspace/ && ls -a
-      - name: Check　Dir(2)
-        run: cd /home/runner/work/workspace/workspace && ls -a
-      - name: Deploy to Firebase
-        uses: w9jds/firebase-action@master
-        with:
-          args: deploy --only hosting
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-      - name: Archive Production Artifact
-        uses: actions/upload-artifact@master
-        with:
-          name: dist
-          path: dist
