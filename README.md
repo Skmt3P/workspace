@@ -257,7 +257,7 @@ React.js, GatsbyJS, Nuxt.js, Vue.js, Firebase, CircleCI, GitHub, GitHubActions, 
 <a href="https://velocv.com/skmt3p/ja" target="_blank" rel=”noopener noreferrer”><img src="https://github.com/Skmt3P/workspace/blob/master/static/img/qr_cv-ja.png" width="80px"></a>
 <a href="https://www.facebook.com/Sakamoto3P" target="_blank" rel=”noopener noreferrer”><img src="https://github.com/Skmt3P/workspace/blob/master/static/img/qr_facebook.png" width="80px"></a>
 <a href="https://github.com/Skmt3P" target="_blank" rel=”noopener noreferrer”><img src="https://github.com/Skmt3P/workspace/blob/master/static/img/qr_github.png" width="80px"></a>
-<a href="https://linkedin.com/in/san-sakamoto-91957152/" target="_blank" rel=”noopener noreferrer”><img src="https://github.com/Skmt3P/workspace/blob/master/static/img/qr_linkedin.png" width="80px"></a>
+<a href="https://linkedin.com/in/ryu-sakamoto-91957152/" target="_blank" rel=”noopener noreferrer”><img src="https://github.com/Skmt3P/workspace/blob/master/static/img/qr_linkedin.png" width="80px"></a>
 <a href="https://omusbridge.com" target="_blank" rel=”noopener noreferrer”><img src="https://github.com/Skmt3P/workspace/blob/master/static/img/qr_omusbridge.png" width="80px"></a>
 </p>
 
@@ -266,7 +266,7 @@ React.js, GatsbyJS, Nuxt.js, Vue.js, Firebase, CircleCI, GitHub, GitHubActions, 
 <a href="https://velocv.com/skmt3p/ja" target="_blank" rel=”noopener noreferrer”>Velo CV(JA)</a><br /><br />
 <a href="https://www.facebook.com/Sakamoto3P" target="_blank" rel=”noopener noreferrer”>Facebook</a><br /><br />
 <a href="https://github.com/Skmt3P" target="_blank" rel=”noopener noreferrer”>GitHub</a><br /><br />
-<a href="https://linkedin.com/in/san-sakamoto-91957152/" target="_blank" rel=”noopener noreferrer”>LinkedIn</a><br /><br />
+<a href="https://linkedin.com/in/ryu-sakamoto-91957152/" target="_blank" rel=”noopener noreferrer”>LinkedIn</a><br /><br />
 <a href="https://omusbridge.com" target="_blank" rel=”noopener noreferrer”>OmusBridge OÜ</a><br /><br />
 </p>
 
