@@ -61,23 +61,23 @@ body_class: markdown-body
 
 ## 💻 RESUME(ENGINEER)
 **「日本とエストニアの2拠点で活躍するマルチスタックなWebフロントエンジニア」** <br />
-Vue.jsとNuxt.jsのフロントエンド開発を主とする一方で上流工程の業務もチョットデキル。
-マルチスタックが売り。
-2017年よりSAP ERPコンサルタントからフロントエンドエンジニアとしてキャリアチェンジを果たした。
+Vue.jsとNuxt.jsのフロントエンド開発を主とする一方で、上流工程の業務もチョットデキル。マネジメントとマルチスタックが売りなフロントエンドエンジニア。
+2017年よりSAP ERPコンサルタントから、フロントエンドエンジニアとしてキャリアチェンジを果たした。2024年にはマネジメント職に転向した。
+
+----------
 
 ### 202103-202108: VR企業Webサイト・Webアプリケーション開発(リモートワーク)
 #### ポジション
-チーフフロントエンドエンジニア
+Webエンジニアマネージャー
 
 #### 参画フェーズ
-要件定義・設計, 
-開発, 
-チームマネジメント
+マネジメント, R&D
+
 #### 業務内容
-私は、正社員としてチームにジョインし、アーキテクト、コーディングガイドラインの設定、チームの立ち上げ、組織のマネジメントを行うとともに、Webフロントエンドエンジニアとして数多のWebサイトやWeb Appsの開発に従事している。
+Web開発部門の部長として、経営領域も踏まえた組織のマネジメントを行なった。
 
 #### 使用技術
-HTML, SASS, Nuxt.js, TypeScript, Zod, Figma, AdobeXD, Jira, Github Actions, CircleCI
+HTML, SCSS, Nuxt.js, TypeScript, Zod, Figma, Jira, Github Actions
 
 ----------
 
@@ -87,7 +87,7 @@ HTML, SASS, Nuxt.js, TypeScript, Zod, Figma, AdobeXD, Jira, Github Actions, Circ
 #### 参画フェーズ
 開発
 #### 業務内容
-B向けのWebアプリケーション開発のプロジェクトに参画し、フロントエンド開発を担当している。実務におけるNuxt.js + TS + Firebaseの案件は初。
+B向けのWebアプリケーション開発のプロジェクトに参画し、フロントエンド開発を担当した。実務におけるNuxt.js + TS + Firebaseの案件は初。
 #### 使用技術
 HTML, SASS, Nuxt.js, TypeScript, Firebase, Figma, Backlog
 
@@ -259,21 +259,12 @@ React.js, GatsbyJS, Nuxt.js, Vue.js, Firebase, CircleCI, GitHub, GitHubActions, 
 <a id="topic4" href="#topic4"></a>
 
 ## 🍀 CONTACT & LINKS
-<p align="center">
-<a href="https://velocv.com/skmt3p" target="_blank" rel=”noopener noreferrer”><img src="https://github.com/Skmt3P/workspace/blob/master/static/img/qr_cv-en.png" width="80px"></a>
-<a href="https://velocv.com/skmt3p/ja" target="_blank" rel=”noopener noreferrer”><img src="https://github.com/Skmt3P/workspace/blob/master/static/img/qr_cv-ja.png" width="80px"></a>
-<a href="https://www.facebook.com/Sakamoto3P" target="_blank" rel=”noopener noreferrer”><img src="https://github.com/Skmt3P/workspace/blob/master/static/img/qr_facebook.png" width="80px"></a>
-<a href="https://github.com/Skmt3P" target="_blank" rel=”noopener noreferrer”><img src="https://github.com/Skmt3P/workspace/blob/master/static/img/qr_github.png" width="80px"></a>
-<a href="https://linkedin.com/in/san-sakamoto-91957152/" target="_blank" rel=”noopener noreferrer”><img src="https://github.com/Skmt3P/workspace/blob/master/static/img/qr_linkedin.png" width="80px"></a>
-<a href="https://omusbridge.com" target="_blank" rel=”noopener noreferrer”><img src="https://github.com/Skmt3P/workspace/blob/master/static/img/qr_omusbridge.png" width="80px"></a>
-</p>
 
 <p align="center">
-<a href="https://velocv.com/skmt3p" target="_blank" rel=”noopener noreferrer”>Velo CV(EN)</a><br /><br />
-<a href="https://velocv.com/skmt3p/ja" target="_blank" rel=”noopener noreferrer”>Velo CV(JA)</a><br /><br />
+<a href="https://skmt3p.com" target="_blank" rel=”noopener noreferrer”>Portfolio</a><br /><br />
 <a href="https://www.facebook.com/Sakamoto3P" target="_blank" rel=”noopener noreferrer”>Facebook</a><br /><br />
 <a href="https://github.com/Skmt3P" target="_blank" rel=”noopener noreferrer”>GitHub</a><br /><br />
-<a href="https://linkedin.com/in/san-sakamoto-91957152/" target="_blank" rel=”noopener noreferrer”>LinkedIn</a><br /><br />
+<a href="https://linkedin.com/in/ryu-sakamoto-91957152/" target="_blank" rel=”noopener noreferrer”>LinkedIn</a><br /><br />
 <a href="https://omusbridge.com" target="_blank" rel=”noopener noreferrer”>OmusBridge OÜ</a><br /><br />
 </p>
 
