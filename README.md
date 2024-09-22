@@ -59,12 +59,29 @@ body_class: markdown-body
 <a id="topic2" href="#topic2"></a>
 
 ## 💻 RESUME(ENGINEER)
-"**A Multi-stack Web Front Desk Engineer with two bases in Japan and Estonia.**" <br />
+"**A Multi-stack Web Frontend Engineer with two bases in Japan and Estonia.**" <br />
 I mainly do front-end development for Vue.js and Nuxt.js, but I'm also a decent upstream developer.
 Multi-stack is my selling points.
 In 2017, I made a career change from an SAP ERP consultant to a front-end engineer.
 
-### 202103-NOW: Development Web Pages and Web Applications at VR Inc, (Nuxt.js)
+----------
+
+### 202404-NOW: Web Frontend Manager at VR Inc, (Nuxt.js)
+#### Role
+President of Web Engineer(Tech Inc.,)
+
+#### Participation Phase
+Management, R&D
+
+#### Business Description
+As head of the web development department, he managed the organisation, taking into account management areas.
+
+#### Technology
+HTML, SCSS, Nuxt.js, TypeScript, Zod, Figma, Jira, Github Actions
+
+----------
+
+### 202103-202403: Development Web Pages and Web Applications at VR Inc, (Nuxt.js)
 #### Role
 Chief Front-end Engineer(Tech Inc.,)
 #### Participation Phase
@@ -252,18 +269,9 @@ React.js, GatsbyJS, Nuxt.js, Vue.js, Firebase, CircleCI, GitHub, GitHubActions, 
 <a id="topic4" href="#topic4"></a>
 
 ## 🍀 CONTACT & LINKS
-<p align="center">
-<a href="https://velocv.com/skmt3p" target="_blank" rel=”noopener noreferrer”><img src="https://github.com/Skmt3P/workspace/blob/master/static/img/qr_cv-en.png" width="80px"></a>
-<a href="https://velocv.com/skmt3p/ja" target="_blank" rel=”noopener noreferrer”><img src="https://github.com/Skmt3P/workspace/blob/master/static/img/qr_cv-ja.png" width="80px"></a>
-<a href="https://www.facebook.com/Sakamoto3P" target="_blank" rel=”noopener noreferrer”><img src="https://github.com/Skmt3P/workspace/blob/master/static/img/qr_facebook.png" width="80px"></a>
-<a href="https://github.com/Skmt3P" target="_blank" rel=”noopener noreferrer”><img src="https://github.com/Skmt3P/workspace/blob/master/static/img/qr_github.png" width="80px"></a>
-<a href="https://linkedin.com/in/ryu-sakamoto-91957152/" target="_blank" rel=”noopener noreferrer”><img src="https://github.com/Skmt3P/workspace/blob/master/static/img/qr_linkedin.png" width="80px"></a>
-<a href="https://omusbridge.com" target="_blank" rel=”noopener noreferrer”><img src="https://github.com/Skmt3P/workspace/blob/master/static/img/qr_omusbridge.png" width="80px"></a>
-</p>
 
 <p align="center">
-<a href="https://velocv.com/skmt3p" target="_blank" rel=”noopener noreferrer”>Velo CV(EN)</a><br /><br />
-<a href="https://velocv.com/skmt3p/ja" target="_blank" rel=”noopener noreferrer”>Velo CV(JA)</a><br /><br />
+<a href="https://skmt3p.com" target="_blank" rel=”noopener noreferrer”>Portfolio</a><br /><br />
 <a href="https://www.facebook.com/Sakamoto3P" target="_blank" rel=”noopener noreferrer”>Facebook</a><br /><br />
 <a href="https://github.com/Skmt3P" target="_blank" rel=”noopener noreferrer”>GitHub</a><br /><br />
 <a href="https://linkedin.com/in/ryu-sakamoto-91957152/" target="_blank" rel=”noopener noreferrer”>LinkedIn</a><br /><br />
